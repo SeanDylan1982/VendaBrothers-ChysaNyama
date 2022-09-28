@@ -309,6 +309,7 @@ header {
     display: grid;
     place-items: center;
     text-align: center;
+    flex-direction: column;
 }
 .container h1 {
     color: var(--clr-white);
