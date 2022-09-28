@@ -61,7 +61,7 @@ Global Styles
 */
 html {
     scroll-behavior: smooth;
-    background: image(./img/background.jpeg);
+    background-image: url(./img/background.jpeg);
 }
 *,
 ::after,
@@ -388,4 +388,11 @@ footer p {
     100% {
     transform: scale(1);
     }
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
