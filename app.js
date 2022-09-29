@@ -71,4 +71,4 @@ scrollLinks.forEach(function (link) {
         });
         linksContainer.style.height = 0;
     });
-})
+}) 
