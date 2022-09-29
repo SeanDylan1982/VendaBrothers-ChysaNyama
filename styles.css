@@ -400,15 +400,16 @@ footer p {
     flex-direction: column;
 }
 
-.language-options .img {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
+.language-options {
     max-width: 20px;
     max-height: 20px;
     font-size: .2rem;
     align-items: center;
     justify-content: center;
+}
+
+.language-options {
+    filter: grayscale(0%);
 }
 
 .map-container {
@@ -446,7 +447,7 @@ footer p {
     float: right;
 }
 
-.socials {
+.social-icons {
     position: fixed;
     display: block;
     top: 50%;
