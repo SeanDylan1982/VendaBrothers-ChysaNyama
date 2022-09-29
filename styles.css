@@ -181,6 +181,13 @@ p {
     margin: 0 auto;
     max-width: 1170px;
 }
+
+.section-container {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
 @media screen and (min-width: 992px) {
     .section-center {
     width: 95vw;
@@ -304,8 +311,6 @@ Scroll
 header {
     position: fixed;
     min-height: 100vh;
-    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(./img/image 5.jpg) center/cover repeat;
 }
 .banner {
     min-height: 100vh;
@@ -337,9 +342,13 @@ header {
 .title span {
     color: var(--clr-secondary);
 }
+#welcome,
 #about,
-#services,
-#tours {
+#promotions,
+#menu,
+#reviews,
+#gallery,
+#contact {
     height: 80vh;
     align-items: center;
     justify-content: center;
@@ -393,7 +402,7 @@ footer p {
     }
 }
 
-.container {
+.container .section-container {
     align-items: center;
     justify-content: center;
     position: relative;
@@ -407,44 +416,60 @@ footer p {
     flex-direction: column;
     max-width: 20px;
     max-height: 20px;
-    font-size: .2rem;
     align-items: center;
     justify-content: center;
+    height: auto;
+    overflow: hidden;
+    transition: var(--transition);
 }
 
 
 .map-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
     float: right;
 }
 
 .welcome-left {
     position: relative;
+    display: flex;
+    flex-direction: column;
     float: left;
 }
 
 .welcome-right {
     position: relative;
+    display: flex;
+    flex-direction: column;
     float: right;
 }
 
 .promotions-left {
     position: relative;
+    display: flex;
+    flex-direction: column;
     float: left;
 }
 
 .promotions-right {
     position: relative;
+    display: flex;
+    flex-direction: column;
     float: right;
 }
 
 .contact-left {
     position: relative;
+    display: flex;
+    flex-direction: column;
     float: left;
 }
 
 .contact-right {
     position: relative;
+    display: flex;
+    flex-direction: column;
     float: right;
 }
 
