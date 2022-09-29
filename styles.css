@@ -400,7 +400,7 @@ footer p {
 }
 
 .section .section-container {
-    position: absolute;
+    position: relative;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -424,32 +424,32 @@ footer p {
 }
 
 .welcome-left {
-    position: absolute;
+    position: relative;
     float: left;
 }
 
 .welcome-right {
-    position: absolute;
+    position: relative;
     float: right;
 }
 
 .promotions-left {
-    position: absolute;
+    position: relative;
     float: left;
 }
 
 .promotions-right {
-    position: absolute;
+    position: relative;
     float: right;
 }
 
 .contact-left {
-    position: absolute;
+    position: relative;
     float: left;
 }
 
 .contact-right {
-    position: absolute;
+    position: relative;
     float: right;
 }
 
