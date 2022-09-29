@@ -171,10 +171,10 @@ p {
     background: var(--clr-white);
     color: var(--clr-secondary);
 }
-/* section
+/* section */
 .section {
     padding-bottom: 5rem;
-} */
+}
 
 .section-center {
     width: 90vw;
@@ -216,9 +216,9 @@ Scroll
 .fixed-nav .links a:hover {
     color: var(--clr-secondary);
 }
-.fixed-nav .links-container {
+/* .fixed-nav .links-container {
     height: auto !important;
-}
+} */
 .nav-header {
     display: flex;
     align-items: center;
@@ -242,7 +242,6 @@ Scroll
     height: 0;
     overflow: hidden;
     transition: var(--transition);
-    float: right;
 }
 .show-links {
     height: 200px;
@@ -338,12 +337,8 @@ header {
 .title span {
     color: var(--clr-secondary);
 }
-#welcome,
 #about,
-#prmotions,
-#menu,
-#reviews,
-#gallery,
+#services,
 #tours {
     height: 80vh;
     align-items: center;
@@ -381,7 +376,6 @@ footer p {
     visibility: hidden;
     z-index: -100; 
 }
-
 .show-link {
     visibility: visible;
     z-index: 100;
@@ -399,10 +393,10 @@ footer p {
     }
 }
 
-.section .section-container {
-    position: relative;
+.container {
     align-items: center;
     justify-content: center;
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -413,13 +407,14 @@ footer p {
     flex-direction: column;
     max-width: 20px;
     max-height: 20px;
-    align-items: left;
+    font-size: .2rem;
+    align-items: center;
     justify-content: center;
-    float: left;
 }
 
+
 .map-container {
-    position: absolute;
+    position: relative;
     float: right;
 }
 
