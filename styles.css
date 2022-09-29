@@ -197,7 +197,7 @@ Scroll
 ===============
 */
 /* navbar */
-nav {
+.navbar {
     background: var(--clr-white);
     padding: 1rem 1.5rem;
 }
@@ -216,9 +216,9 @@ nav {
 .fixed-nav .links a:hover {
     color: var(--clr-secondary);
 }
-/* .fixed-nav .links-container {
+.fixed-nav .links-container {
     height: auto !important;
-} */
+}
 .nav-header {
     display: flex;
     align-items: center;
@@ -337,8 +337,12 @@ header {
 .title span {
     color: var(--clr-secondary);
 }
+#welcome,
 #about,
-#services,
+#prmotions,
+#menu,
+#reviews,
+#gallery,
 #tours {
     height: 80vh;
     align-items: center;
@@ -376,6 +380,7 @@ footer p {
     visibility: hidden;
     z-index: -100; 
 }
+
 .show-link {
     visibility: visible;
     z-index: 100;
@@ -394,6 +399,7 @@ footer p {
 }
 
 .container {
+    position: absolute;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -401,49 +407,47 @@ footer p {
 }
 
 .language-options {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
     max-width: 20px;
     max-height: 20px;
-    font-size: .2rem;
     align-items: center;
     justify-content: center;
 }
 
-.language-options {
-    filter: grayscale(0%);
-}
-
 .map-container {
-    position: relative;
+    position: absolute;
     float: right;
 }
 
 .welcome-left {
-    position: relative;
+    position: absolute;
     float: left;
 }
 
 .welcome-right {
-    position: relative;
+    position: absolute;
     float: right;
 }
 
 .promotions-left {
-    position: relative;
+    position: absolute;
     float: left;
 }
 
 .promotions-right {
-    position: relative;
+    position: absolute;
     float: right;
 }
 
 .contact-left {
-    position: relative;
+    position: absolute;
     float: left;
 }
 
 .contact-right {
-    position: relative;
+    position: absolute;
     float: right;
 }
 
