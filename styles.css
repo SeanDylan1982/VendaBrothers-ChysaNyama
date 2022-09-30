@@ -44,7 +44,7 @@ Variables
     --clr-green-light: hsl(125, 71%, 66%);
     --clr-secondary: hsla(182, 63%, 54%);
     --clr-black: #222;
-    --ff-primary: "Poppins", sans-serif;
+    --ff-primary: "Roboto", sans-serif;
     --ff-secondary: "Open Sans", sans-serif;
     --transition: all 0.3s linear;
     --spacing: 0.25rem;
@@ -61,8 +61,6 @@ Global Styles
 */
 html {
     scroll-behavior: smooth;
-/*    background-image: url(./img/background.jpeg); */
-    font-family: Poppins, sans-serif;
 }
 *,
 ::after,
@@ -86,7 +84,6 @@ a {
 }
 img:not(.logo) {
     width: 100%;
-    max-width: 350px;;
 }
 img {
     display: block;
@@ -181,13 +178,6 @@ p {
     margin: 0 auto;
     max-width: 1170px;
 }
-
-.section-container {
-    width: 90vw;
-    margin: 0 auto;
-    max-width: 1170px;
-}
-
 @media screen and (min-width: 992px) {
     .section-center {
     width: 95vw;
@@ -204,7 +194,7 @@ Scroll
 ===============
 */
 /* navbar */
-.navbar {
+nav {
     background: var(--clr-white);
     padding: 1rem 1.5rem;
 }
@@ -243,7 +233,7 @@ Scroll
     color: var(--clr-secondary);
 }
 .logo {
-    height: 100px;
+    height: 50px;
 }
 .links-container {
     height: 0;
@@ -309,15 +299,15 @@ Scroll
 }
 /* hero */
 header {
-    position: fixed;
     min-height: 100vh;
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+    url(./hero-bcg.jpeg) center/cover no-repeat;
 }
 .banner {
     min-height: 100vh;
     display: grid;
     place-items: center;
     text-align: center;
-    flex-direction: column;
 }
 .container h1 {
     color: var(--clr-white);
@@ -342,18 +332,12 @@ header {
 .title span {
     color: var(--clr-secondary);
 }
-#welcome,
 #about,
-#promotions,
-#menu,
-#reviews,
-#gallery,
-#contact {
+#services,
+#tours {
     height: 80vh;
-    align-items: center;
-    justify-content: center;
 }
-#promotions {
+#services {
     background: var(--clr-white);
 }
 footer {
@@ -400,87 +384,4 @@ footer p {
     100% {
     transform: scale(1);
     }
-}
-
-.container .section-container {
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-.language-options {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    max-width: 20px;
-    max-height: 20px;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    overflow: hidden;
-    transition: var(--transition);
-}
-
-
-.map-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    float: right;
-}
-
-.welcome-left {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    float: left;
-}
-
-.welcome-right {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    float: right;
-}
-
-.promotions-left {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    float: left;
-}
-
-.promotions-right {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    float: right;
-}
-
-.contact-left {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    float: left;
-}
-
-.contact-right {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    float: right;
-}
-
-.social-icons {
-    position: fixed;
-    display: block;
-    top: 50%;
-    right: 0;
-    z-index: 2;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    padding: 25px 0;
 }
