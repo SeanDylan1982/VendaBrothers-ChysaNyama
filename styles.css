@@ -388,40 +388,44 @@ footer p {
 
 .about-card {
     position: relative;
-    display: grid;
+    display: flex;
     width: 90%;
     border: 1px solid #f1f1f1;
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
+    padding-left: 25px;
 }
 
 .services-card {
     position: relative;
-    display: grid;
+    display: flex;
     width: 90%;
     border: 1px solid #f1f1f1;
     align-items: center;
     justify-content: center;
-    box-shadow: var(--light-shadow)
+    box-shadow: var(--light-shadow);
+    padding-left: 25px;
 }
 
 .gallery-card {
     position: relative;
-    display: grid;
+    display: flex;
     width: 90%;
     border: 1px solid #f1f1f1;
     align-items: center;
     justify-content: center;
-    box-shadow: var(--light-shadow)
+    box-shadow: var(--light-shadow);
+    padding-left: 25px;
 }
 
 .contact-card {
     position: relative;
-    display: block;
+    display: flex;
     width: 90%;
     border: 1px solid #f1f1f1;
     align-items: center;
     justify-content: center;
-    box-shadow: var(--light-shadow)
+    box-shadow: var(--light-shadow);
+    padding-left: 25px;
 }
