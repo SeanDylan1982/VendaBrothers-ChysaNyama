@@ -385,3 +385,43 @@ footer p {
     transform: scale(1);
     }
 }
+
+.about-card {
+    position: relative;
+    display: grid;
+    width: 90%;
+    border: 1px solid #f1f1f1;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--dark-shadow);
+}
+
+.services-card {
+    position: relative;
+    display: grid;
+    width: 90%;
+    border: 1px solid #f1f1f1;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--light-shadow)
+}
+
+.gallery-card {
+    position: relative;
+    display: grid;
+    width: 90%;
+    border: 1px solid #f1f1f1;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--light-shadow)
+}
+
+.contact-card {
+    position: relative;
+    display: grid;
+    width: 90%;
+    border: 1px solid #f1f1f1;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--light-shadow)
+}
