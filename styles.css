@@ -418,7 +418,7 @@ footer p {
 
 .contact-card {
     position: relative;
-    display: grid;
+    display: block;
     width: 90%;
     border: 1px solid #f1f1f1;
     align-items: center;
