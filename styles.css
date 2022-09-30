@@ -334,7 +334,8 @@ header {
 }
 #about,
 #services,
-#tours {
+#gallery,
+#contact {
     height: 80vh;
 }
 #services {
@@ -350,6 +351,7 @@ footer p {
     text-transform: capitalize;
     letter-spacing: var(--spacing);
     margin-bottom: 0;
+    text-decoration: none;
 }
 
 .top-link {
