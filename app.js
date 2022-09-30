@@ -1,8 +1,25 @@
+// Element.getBoundingClientRect() method returns the size of an element and its position relative to the viewport.
+// pageYOffset is a read - only window property that returns the number of pixels the document has been scrolled vertically.
+// slice extracts a section of a string without modifying original string
+// offsetTop - A Number, representing the top position of the element, in pixels
+//
+//The if statement:
+// if(condition such as containerHeight === 0) {
+//      this set of brackets represents the THEN part of the if statement
+//      then change it to the cosen value
+// }
+// else this rperesents the alternative to the then statement
+
+
+
 // ********** set date ************
 
 const date = document.getElementById("date");
     date.innerHTML = new Date().getFullYear();
+
+
 // ********** close links ************
+
 const navToggle = document.querySelector(".nav-toggle");
 const linksContainer = document.querySelector(".links-container");
 const links = document.querySelector(".links");
@@ -22,7 +39,10 @@ navToggle.addEventListener("click", function(){
     }
 
 });
+
+
 // ********** fixed navbar ************
+
 const navbar = document.getElementById("nav");
 const topLink = document.querySelector(".top-link");
 
@@ -41,7 +61,10 @@ window.addEventListener("scroll", function(){
         topLink.classList.remove("show-link");
     }
 })
+
+
 // ********** smooth scroll ************
+
 // Select internal page links with precision
 const scrollLinks = document.querySelectorAll(".scroll-link");
 
@@ -71,4 +94,4 @@ scrollLinks.forEach(function (link) {
         });
         linksContainer.style.height = 0;
     });
-}) 
+})
