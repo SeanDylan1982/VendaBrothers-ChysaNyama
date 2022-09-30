@@ -391,6 +391,7 @@ footer p {
 .about-card {
     position: relative;
     display: flex;
+    flex-direction: row;
     width: 90%;
     border: 1px solid #f1f1f1;
     align-items: center;
@@ -402,6 +403,7 @@ footer p {
 .services-card {
     position: relative;
     display: flex;
+    flex-direction: row;
     width: 90%;
     border: 1px solid #f1f1f1;
     align-items: center;
@@ -413,6 +415,7 @@ footer p {
 .gallery-card {
     position: relative;
     display: flex;
+    flex-direction: row;
     width: 90%;
     border: 1px solid #f1f1f1;
     align-items: center;
@@ -424,6 +427,7 @@ footer p {
 .contact-card {
     position: relative;
     display: flex;
+    flex-direction: row;
     width: 90%;
     border: 1px solid #f1f1f1;
     align-items: center;
