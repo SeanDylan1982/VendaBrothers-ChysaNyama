@@ -409,7 +409,7 @@ footer p {
     border: 1px solid #f1f1f1;
     align-items: center;
     justify-content: center;
-    box-shadow: var(--light-shadow);
+    box-shadow: var(--dark-shadow);
     padding-left: 25px;
 }
 
@@ -421,7 +421,7 @@ footer p {
     border: 1px solid #f1f1f1;
     align-items: center;
     justify-content: center;
-    box-shadow: var(--light-shadow);
+    box-shadow: var(--dark-shadow);
     padding-left: 25px;
 }
 
@@ -433,6 +433,18 @@ footer p {
     border: 1px solid #f1f1f1;
     align-items: center;
     justify-content: center;
-    box-shadow: var(--light-shadow);
+    box-shadow: var(--dark-shadow);
+    padding-left: 25px;
+}
+
+.form-box {
+    position: absolute;
+    display: grid;
+    flex-direction: row;
+    width: 70%;
+    border: 1px solid #f1f1f1;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--dark-shadow);
     padding-left: 25px;
 }
