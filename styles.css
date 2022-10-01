@@ -89,6 +89,8 @@ img {
     display: block;
     max-width: 250px;
     max-height: 250px;
+    align-items: center;
+    justify-content: center;
 }
 
 img:hover {
@@ -401,11 +403,11 @@ footer p {
 
 .about-card {
     position: relative;
-    top: 10%;
-    left: 10%;
+    top: 5%;
+    left: 5%;
     display: inline-block;
     flex-direction: row;
-    width: 90%;
+    width: 60%;
     border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
@@ -415,11 +417,11 @@ footer p {
 
 .services-card {
     position: relative;
-    top: 10%;
-    left: 10%;
+    top: 5%;
+    left: 5%;
     display: inline-block;
     flex-direction: row;
-    width: 90%;
+    width: 60%;
     border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
@@ -429,11 +431,11 @@ footer p {
 
 .gallery-card {
     position: relative;
-    top: 10%;
-    left: 10%;
+    top: 5%;
+    left: 5%;
     display: inline-block;
     flex-direction: row;
-    width: 90%;
+    width: 60%;
     border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
@@ -443,11 +445,11 @@ footer p {
 
 .contact-card {
     position: relative;
-    top: 10%;
-    left: 10%;
+    top: 5%;
+    left: 5%;
     display: inline-block;
     flex-direction: row;
-    width: 90%;
+    width: 60%;
     border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
