@@ -187,6 +187,7 @@ p {
 /* section */
 .section {
     padding-bottom: 5rem;
+    display: inline-block;
 }
 
 .section-center {
