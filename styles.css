@@ -415,7 +415,7 @@ footer p {
     top: 5%;
     left: 5%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 90%;
     height: 95%;
     border: 1px solid #1a1a1a;
@@ -430,7 +430,7 @@ footer p {
     top: 5%;
     left: 5%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 90%;
     height: 95%;
     border: 1px solid #1a1a1a;
@@ -445,7 +445,7 @@ footer p {
     top: 5%;
     left: 5%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 90%;
     height: 95%;
     border: 1px solid #1a1a1a;
@@ -460,7 +460,7 @@ footer p {
     top: 5%;
     left: 5%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 90%;
     height: 70%;
     border: 1px solid #1a1a1a;
@@ -473,7 +473,7 @@ footer p {
 .form-box {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 95%;
     height: 40%;
     border: 1px solid #1a1a1a;
