@@ -408,6 +408,7 @@ footer p {
     display: inline-block;
     flex-direction: row;
     width: 60%;
+    height: 80%;
     border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
@@ -422,6 +423,7 @@ footer p {
     display: inline-block;
     flex-direction: row;
     width: 60%;
+    height: 80%;
     border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
@@ -436,6 +438,7 @@ footer p {
     display: inline-block;
     flex-direction: row;
     width: 60%;
+    height: 80%;
     border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
@@ -450,6 +453,7 @@ footer p {
     display: inline-block;
     flex-direction: row;
     width: 60%;
+    height: 80%;
     border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
