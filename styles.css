@@ -111,10 +111,12 @@ h1 {
     font-size: 3rem;
 }
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: #f1f1f1;
 }
 h3 {
     font-size: 1.25rem;
+    color: #f1f1f1;
 }
 h4 {
     font-size: 0.875rem;
