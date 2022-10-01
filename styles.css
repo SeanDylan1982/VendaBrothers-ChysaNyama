@@ -459,8 +459,8 @@ footer p {
     left: 5%;
     display: inline-block;
     flex-direction: row;
-    width: 70%;
-    height: 90%;
+    width: 90%;
+    height: 70%;
     border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
@@ -472,7 +472,7 @@ footer p {
     position: relative;
     display: inline-block;
     flex-direction: row;
-    width: 80%;
+    width: 95%;
     height: 40%;
     border: 1px solid #1a1a1a;
     align-items: center;
