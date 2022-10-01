@@ -404,7 +404,7 @@ footer p {
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
-    padding-left: 25px;
+    padding: 25px;
 }
 
 .services-card {
@@ -416,7 +416,7 @@ footer p {
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
-    padding-left: 25px;
+    padding: 25px;
 }
 
 .gallery-card {
@@ -428,7 +428,7 @@ footer p {
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
-    padding-left: 25px;
+    padding: 25px;
 }
 
 .contact-card {
@@ -440,17 +440,16 @@ footer p {
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
-    padding-left: 25px;
+    padding: 25px;
 }
 
 .form-box {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    width: 70%;
+    position: relative;
+    display: inline-block;
+    width: 90%;
     border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
-    padding-left: 25px;
+    padding: 25px;
 }
