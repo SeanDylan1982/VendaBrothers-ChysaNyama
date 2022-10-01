@@ -186,11 +186,13 @@ p {
 }
 /* section */
 .section {
+    height: 100%
     padding-bottom: 5rem;
     display: grid;
 }
 
 .section-center {
+    height: 95%;
     width: 90vw;
     margin: 0 auto;
     max-width: 1170px;
