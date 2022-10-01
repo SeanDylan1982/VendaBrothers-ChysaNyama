@@ -359,10 +359,10 @@ header {
     background: var(--clr-white);
 }
 #contact {
-    background: var(--clr-grey-1);
+    background: var(--clr-grey-6);
 }
 footer {
-    background: var(--clr-white);
+    background: var(--clr-grey-1);
     padding: 5rem 1rem;
 }
 footer p {
@@ -414,7 +414,7 @@ footer p {
     left: 5%;
     display: inline-block;
     flex-direction: row;
-    width: 95%;
+    width: 90%;
     height: 95%;
     border: 1px solid #1a1a1a;
     align-items: center;
@@ -429,7 +429,7 @@ footer p {
     left: 5%;
     display: inline-block;
     flex-direction: row;
-    width: 95%;
+    width: 90%;
     height: 95%;
     border: 1px solid #1a1a1a;
     align-items: center;
@@ -444,7 +444,7 @@ footer p {
     left: 5%;
     display: inline-block;
     flex-direction: row;
-    width: 95%;
+    width: 90%;
     height: 95%;
     border: 1px solid #1a1a1a;
     align-items: center;
@@ -459,7 +459,7 @@ footer p {
     left: 5%;
     display: inline-block;
     flex-direction: row;
-    width: 95%;
+    width: 90%;
     height: 90%;
     border: 1px solid #1a1a1a;
     align-items: center;
@@ -472,11 +472,11 @@ footer p {
     position: relative;
     display: inline-block;
     flex-direction: row;
-    width: 95%;
-    height: 60%;
+    width: 80%;
+    height: 40%;
     border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
-    padding: 10px;
+    padding: 5px;
 }
