@@ -410,7 +410,7 @@ footer p {
     left: 5%;
     display: inline-block;
     flex-direction: row;
-    width: 75%;
+    width: 85%;
     height: 95%;
     border: 1px solid #1a1a1a;
     align-items: center;
@@ -425,7 +425,7 @@ footer p {
     left: 5%;
     display: inline-block;
     flex-direction: row;
-    width: 75%;
+    width: 85%;
     height: 95%;
     border: 1px solid #1a1a1a;
     align-items: center;
@@ -440,7 +440,7 @@ footer p {
     left: 5%;
     display: inline-block;
     flex-direction: row;
-    width: 75%;
+    width: 85%;
     height: 95%;
     border: 1px solid #1a1a1a;
     align-items: center;
@@ -455,7 +455,7 @@ footer p {
     left: 5%;
     display: inline-block;
     flex-direction: row;
-    width: 75%;
+    width: 85%;
     height: 95%;
     border: 1px solid #1a1a1a;
     align-items: center;
@@ -469,6 +469,7 @@ footer p {
     display: inline-block;
     flex-direction: row;
     width: 90%;
+    height: 80%;
     border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
