@@ -416,7 +416,7 @@ footer p {
     left: 5%;
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 40%;
     height: 95%;
     border: 1px solid #1a1a1a;
     align-items: center;
@@ -431,7 +431,7 @@ footer p {
     left: 5%;
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 40%;
     height: 95%;
     border: 1px solid #1a1a1a;
     align-items: center;
@@ -446,7 +446,7 @@ footer p {
     left: 5%;
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 40%;
     height: 95%;
     border: 1px solid #1a1a1a;
     align-items: center;
@@ -461,8 +461,8 @@ footer p {
     left: 5%;
     display: flex;
     flex-direction: column;
-    width: 45%;
-    height: 70%;
+    width: 40%;
+    height: 50%;
     border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
@@ -474,7 +474,7 @@ footer p {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 40%;
     height: 40%;
     border: 1px solid #1a1a1a;
     align-items: center;
