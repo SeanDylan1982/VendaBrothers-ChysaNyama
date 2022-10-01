@@ -412,7 +412,7 @@ footer p {
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
-    padding: 25px;
+    padding: 10px;
 }
 
 .services-card {
@@ -426,7 +426,7 @@ footer p {
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
-    padding: 25px;
+    padding: 10px;
 }
 
 .gallery-card {
@@ -440,7 +440,7 @@ footer p {
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
-    padding: 25px;
+    padding: 10px;
 }
 
 .contact-card {
@@ -454,7 +454,7 @@ footer p {
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
-    padding: 25px;
+    padding: 10px;
 }
 
 .form-box {
@@ -466,5 +466,5 @@ footer p {
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
-    padding: 25px;
+    padding: 10px;
 }
