@@ -89,6 +89,12 @@ img {
     display: block;
 }
 
+img:hover {
+    animation: bounce 2s ease-in-out infinite;
+    scale: 1.1;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
 h1,
 h2,
 h3,
@@ -302,7 +308,7 @@ nav {
 header {
     min-height: 100vh;
     background: linear-gradient(rgba(63, 208, 212, 0.3), rgba(0, 0, 0, 0.5)),
-    url(./img/venda-brothers-background-1.jpg) center/cover no-repeat;
+    url(./img/venda-brothers-background-1.jpg) center/cover repeat;
 }
 .banner {
     min-height: 100vh;
@@ -394,7 +400,7 @@ footer p {
     display: flex;
     flex-direction: row;
     width: 90%;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
@@ -406,7 +412,7 @@ footer p {
     display: flex;
     flex-direction: row;
     width: 90%;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
@@ -418,7 +424,7 @@ footer p {
     display: flex;
     flex-direction: row;
     width: 90%;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
@@ -430,7 +436,7 @@ footer p {
     display: flex;
     flex-direction: row;
     width: 90%;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
@@ -439,10 +445,10 @@ footer p {
 
 .form-box {
     position: absolute;
-    display: grid;
+    display: flex;
     flex-direction: row;
     width: 70%;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
