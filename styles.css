@@ -397,8 +397,8 @@ footer p {
 
 .about-card {
     position: relative;
-    top: 50%;
-    left: 50%;
+    top: 10%;
+    left: 10%;
     display: inline-block;
     flex-direction: row;
     width: 90%;
@@ -411,8 +411,8 @@ footer p {
 
 .services-card {
     position: relative;
-    top: 50%;
-    left: 50%;
+    top: 10%;
+    left: 10%;
     display: inline-block;
     flex-direction: row;
     width: 90%;
@@ -425,8 +425,8 @@ footer p {
 
 .gallery-card {
     position: relative;
-    top: 50%;
-    left: 50%;
+    top: 10%;
+    left: 10%;
     display: inline-block;
     flex-direction: row;
     width: 90%;
@@ -439,8 +439,8 @@ footer p {
 
 .contact-card {
     position: relative;
-    top: 50%;
-    left: 50%;
+    top: 10%;
+    left: 10%;
     display: inline-block;
     flex-direction: row;
     width: 90%;
