@@ -358,8 +358,11 @@ header {
 #services {
     background: var(--clr-white);
 }
-footer {
+#contact {
     background: var(--clr-grey-1);
+}
+footer {
+    background: var(--clr-white);
     padding: 5rem 1rem;
 }
 footer p {
@@ -457,7 +460,7 @@ footer p {
     display: inline-block;
     flex-direction: row;
     width: 85%;
-    height: 95%;
+    height: 90%;
     border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
@@ -469,8 +472,8 @@ footer p {
     position: relative;
     display: inline-block;
     flex-direction: row;
-    width: 90%;
-    height: 80%;
+    width: 95%;
+    height: 60%;
     border: 1px solid #1a1a1a;
     align-items: center;
     justify-content: center;
