@@ -90,14 +90,13 @@ img:not(.logo) {
 .gallery-card img, 
 .contact-card img {
     display: block;
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 300px;
+    max-height: 300px;
     align-items: center;
     justify-content: center;
 }
 
 img:hover {
-    animation: bounce 1s ease-in-out infinite;
     scale: 1.1;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
@@ -353,15 +352,27 @@ header {
 }
 #about,
 #services,
-#gallery,
-#contact {
-    height: 80vh;
+#gallery {
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
 }
+
+#contact {
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+
 #services {
     background: var(--clr-white);
+    align-items: center;
+    justify-content: center;
 }
 #contact {
     background: var(--clr-grey-10);
+    align-items: center;
+    justify-content: center;
 }
 footer {
     background: var(--clr-grey-1);
@@ -412,73 +423,60 @@ footer p {
 
 .about-card {
     position: relative;
-    top: 5%;
-    left: 5%;
-    display: inline-block;
-    flex-direction: column;
+    top: 1%;
+    left: 30%;
+    display: flex;
+    flex-direction: row;
     width: 40%;
     height: 95%;
-    border: 1px solid #1a1a1a;
+    border: 0 solid #1a1a1a;
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
-    padding: 10px;
+    padding: 1px;
 }
 
 .services-card {
     position: relative;
-    top: 5%;
-    left: 5%;
-    display: inline-block;
-    flex-direction: column;
+    top: 1%;
+    left: 30%;
+    display: flex;
+    flex-direction: row;
     width: 40%;
     height: 95%;
-    border: 1px solid #1a1a1a;
+    border: 0 solid #1a1a1a;
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
-    padding: 10px;
+    padding: 1px;
 }
 
 .gallery-card {
     position: relative;
-    top: 5%;
-    left: 5%;
-    display: inline-block;
-    flex-direction: column;
+    top: 1%;
+    left: 30%;
+    display: flex;
+    flex-direction: row;
     width: 40%;
     height: 95%;
-    border: 1px solid #1a1a1a;
+    border: 0 solid #1a1a1a;
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
-    padding: 10px;
+    padding: 1px;
 }
 
 .contact-card {
     position: relative;
-    top: 5%;
-    left: 5%;
-    display: inline-block;
-    flex-direction: column;
-    width: 40%;
-    height: 40%;
-    border: 1px solid #1a1a1a;
-    align-items: center;
-    justify-content: center;
-    box-shadow: var(--dark-shadow);
-    padding: 10px;
-}
-
-.form-box {
-    position: relative;
+    top: 1%;
+    left: 30%;
     display: flex;
     flex-direction: column;
     width: 40%;
-    height: 40%;
-    border: 1px solid #1a1a1a;
+    height: 50%;
+    border: 0 solid #1a1a1a;
     align-items: center;
     justify-content: center;
     box-shadow: var(--dark-shadow);
-    padding: 5px;
+    padding: 1px;
 }
