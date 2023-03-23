@@ -1,261 +1,758 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Venda Brothers | Chisa-Nyama | Benoni</title>
-        <!-- font-awesome and Google fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- styles -->
-        <link rel="stylesheet" href="styles.css" />
-        <meta name="author" content="Sean Dylan Patterson" />
-    </head>
-    <body>
-        <!-- Header Section -->
-        <header id="home">
-            <!-- Navbar -->
-            <nav id="nav">
-                <div class="nav-center">
-                    <!-- Nav Header -->
-                    <div class="nav-header">
-                        <a href="/img/menu_03.jpg" target="_blank" class="btn btn-white" download>
-                            Download Our Menu!
-                        </a>
-                        <button class="nav-toggle">
-                            <i class="fas fa-bars"></i>
-                        </button>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!-- Favicon and Home Button Logo -->
+  <link href="./img/logo.png" rel="icon">
+  <link href="./img/logo.png" rel="apple-touch-icon" width="42" height="42" alt="The website's logo">
+  <!-- CSS Stylesheet Files -->
+  <link href="./style.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Venda Brothers Chysa Nyama | Home</title>
+</head>
+<body id="home">
+  <!-- Start Header Section -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo"><img src="./img/logo.png" width="42" height="42" alt="The website's logo" class="img-fluid"></a>
+      <!-- <form action="" method="get" id="form">
+        <label for="number">Check a number</label>
+        <input type="tel" name="number" id="input" value="" placeholder="0123456789">
+        <button type="submit" onsubmit="">Check</button>
+      </form> -->
+      <nav id="navbar" class="navbar">
+        <div class="sidebar" id="sidebar">
+          <div class="tooltip">
+            <i class="fa fa-file-text"></i><p>Our Menu</p>
+            <span class="tooltip-text" id="cl">
+              <object type="application/pdf" menu="false" data="./img/menu_03.jpg" width="100%" height="100%"></object>
+            </span>
+          </div>
+          <div class="tooltip">
+            <i class="fa fa-map"></i><p>Map</p>
+            <span class="tooltip-text" id="cv">
+              <object type="application/pdf" menu="false" data="./img/map.png" width="100%" height="100%"></object>
+            </span>
+          </div>
+        </div>
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#work">Work</a></li>
+          <li><a class="nav-link scrollto" href="#plans">Plans</a></li>
+          <li><a class="nav-link scrollto" href="#contact-form">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header Section -->
+  <!-- Start Hero Section -->
+  <div id="hero" class="hero route bg-image" style="background-image: url(./img/venda-brothers-background-1.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <p class="hero-subtitle">Venda Brothers</p>
+          <h1 class="hero-title mb-4">Chysa Nyama</h1>
+          <br>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="Braai..., Shisa nyama..., Ukosa..., Nkuku..., Ntlo ea lehlong..., Chesa nyama..., Ukushisa..., Ukugrilla..., Ukuholisa..., Umsila..., Ukuphahla..., Ukuhlabisa..., Ukhamba..., Isibindi..., Ntlohliwe..., Ukucula..., Ukuqhobosha..., Ukuqeda..., Ukucweya..., Ukuhlamba..., Ukuhlakaza..., Ukuhlolela..., Ukuyisa..., Ukwaba..., Ukugula..., Isidlo sasekhaya..., Ukulala ngesifo..., Ukubhabha..., Ukuba kwa go..., Ukuswa..., Ukuphosa..., Ukubeka..., Ukunyakaza..., Ukubheka..., Ukulapha..., Ukulahla..., Ukupheketa..., Ukupheka..., Ukugxeka..., Ukukhumbula..., Ukubala..., Ukubukela..., Ukugwinya..., Ukwabela..., Ukugada..., Ukubunga..., Ukubhacala..., Ukutaka..., Ukuduma..., Ukutlala..., Ukuziqhenya..., Ukukhala..., Ukutshisa..., Ukuziba..., Ukuthumela..., Ukucineka..., Ukuphekwa..., Ukucimela..., Ukuthoma..., Ukuthola..., Ukukhipha..., Ukuthela..., Ukuthwala..., Ukucika..., Ukucasha..., Ukucokama..., Ukugquma..., Ukudla..., Ukugabhana..., Ukugwinya..., Ukushubeza..., Ukuphelela..., Ukukhaza..., Ukukhokha..., Ukubamba..., Ukubamba isisu..., Ukubetha..., Ukuxova..., Ukuphahlaza..., Ukukhusela..., Ukukhalima..., Ukuphindela..., Ukubeka umfutho..., Ukufutha..., Ukunyamaza..., Ukupholisa..., Ukubeka phansi..., Ukuphonsa..., Ukuxovula..., Ukugangganisa..., Indlela yokulala ku ngena ngesifo..., Isiko sephethephethe..., Ukudla ngesisu..., Inqola yomzi..., Ukubuka inkomo zawo e nyakatho..., Ukuhamba kwesilomo..., Ukuhamba kwendlu..., Ukwanda kwebhokisi..., Imbiza yomzi..., Ukuzalwa kwabantu..., Ukuhlangana nabadala..., Ukuzalwa kwezindlu..., Ukucabanga ngesintu...,"></span></p>
+          <br>
+          <p>
+            <br>
+            <br>
+          </p>
+          <br>
+          <h1 class="hero-title mb-4">072 390 7241</h1>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">More About Me</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div><!-- End Hero Section -->
+  <main>
+    <section id="about" class="about-mf sect-pt4 route"> <!-- Start About Section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="./img/map.png" loading="lazy" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
                     </div>
-                    <!-- Links -->
-                    <div class="links-container">
-                        <ul class="links">
-                            <li>
-                                <a href="#home" class="scroll-link">home</a>
-                            </li>
-                            <li>
-                                <a href="#about" class="scroll-link">about us</a>
-                            </li>
-                            <li>
-                                <a href="#map" class="scroll-link">map</a>
-                            </li>
-                            <li>
-                                <a href="#services" class="scroll-link">our business</a>
-                            </li>
-                            <li>
-                                <a href="#gallery" class="scroll-link">chisa-nyama</a>
-                            </li>
-                            <li>
-                                <a href="#contact" class="scroll-link">contact us</a>
-                            </li>
-                        </ul>
+                    <div class="col-sm-6 col-md-7">
+                      
                     </div>
+                  </div>
+                  <br>
+                  <div class="tech-stack">
+                    <div class="about-info">
+                      <p> Voortrekker Road, Benoni - Opposite Lakeside Taxi Rank</p>
+                      <p> Call and Collect in 5 - 10 minutes - <a href="tel:+27723907241"> <strong> 072 390 7241 </strong></a></p>
+                      <p> <a href="./img/menu_03.jpg" target="_blank">Download Our Menu!</a> </p>
+                    </div>
+                  </div>
                 </div>
-            </nav>
-            <!-- Banner -->
-            <div class="banner">
-                <div class="container">
-                    <h1>venda brothers</h1>
-                    <h1>chisa-nyama</h1>
-                    <br>
-                    <p>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">A bit about us...</h5>
+                      <p> &nbsp; </p>
+                      <p class="lead">
                         Welcome to Venda Brothers Chisa-Nyama, come and join us for breakfast lunch or dinner!
                         Eat-in and Takeaways available, cash and cards accepted.
-                    </p>
-                    <br>
-                    <h3>
-                        Voortrekker Road, Benoni - Opposite the Lakeside Taxi Rank
-                    </h3>
-                    <h3>
-                        Call and Collect for Takeaway orders - 072 390 7241
-                    </h3>
-                    <br>
-                    <a href="/img/menu_03.jpg" target="_blank" class="btn btn-white" download>
-                        Download Our Menu!
-                    </a>
-                </div>
-            </div>
-        </header>
-        <!-- About -->
-        <section id="about" class="section">
-            <div class="title">
-                <h2>about <span>us</span></h2>
-            </div>
-            <div class="about-card">
-                <div class="about-container">
-                    <p>
+                      </p><br>
+                      <p class="lead">
                         All your favourite traditional South African Chisa Nyama classics:
                         Smokey, flame-seered Chicken, beef and wors nyama, coming hot off the braai
-                    </p>
-                    <div class="img-container">
-                        <img src="./img/cn-1.jpg" alt="pap and sauce">
-                    </div>
-                    <p>
+                      </p><br>
+                      <p class="lead">
                         alongside perfectly prepared pap and the most sensational chakalaka, beans and sauces
                         you've dreamed of and of course tangy coleslaw on the side!
-                    </p>
-                    <p>
-                        <strong>Starting at just R35 per plate, no one leaves hungry!</strong>
-                    </p>
-                </div>
-                <div class="about-container">
-                    <div class="img-container">
-                        <img src="./img/cn-2.jpg" alt="pap and sauce">
+                      </p><br>
+                      <p class="lead">
+                        <strong>Starting at JUST <em>R35 per plate,</em> NO-ONE leaves hungry!</strong>
+                      </p><br>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="about-container">
-                <div class="about-card">
-                    <p>
-                        Yes! We're open for breakfast soon too! Start the day just right,
-                    </p>
-                    <div class="img-container">
-                        <img src="./img/chakalaka-1.jpg" alt="pap and sauce">
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+    <!-- Start Services Section -->
+    <section id="services" class="services-mf pt-5 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                So what do we have on offer...? 
+              </h3>
+              <p class="subtitle-a">
+                Well, here are some of the dishes we pride ourselves on...
+                Everything you remember best from chysa nyama at Gogos house
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle">
+                  <img src="./img/chicken 1.png" alt="chicken">
+                </span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Chicken</h2>
+                <p class="s-description text-center">
+                  Succulent chicken kotas - flame-grilled, traditional basting, seered to perfection
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle">
+                  <img src="./img/beef 2.png" alt="beef">
+                </span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Beef</h2>
+                <p class="s-description text-center">
+                  Beautiful beef slabs, cured, seasoned and spiced then expertly grilled
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle">
+                  <img src="./img/wors 1.png" alt="boerewors">
+                </span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Wors</h2>
+                <p class="s-description text-center">
+                  Double the delicious with 2 portions of traditional South African boerewors
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle">
+                  <img src="./img/sides 1.png" alt="sides">
+                </span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Sides</h2>
+                <p class="s-description text-center">
+                  You can never forget about the sides, salads and sauces to go alongside...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle">
+                  <img src="./img/lunch 1.png" alt="lunch">
+                </span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Big Portions</h2>
+                <p class="s-description text-center">
+                  When you order 1 regular meal and receive 2 large take-aways in a plastic
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle">
+                  <img src="./img/atmosphere 1.png" alt="people gathering">
+                </span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Atmosphere</h2>
+                <p class="s-description text-center">
+                  We all know Benoni has a special vibe and it's becasue of places like this!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+    <!-- Start Counters Section -->
+    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.png)">
+      <div class="overlay-mf"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-clipboard-check"></i></span>
+              </div>
+              <div class="counter-num">
+                <p>Over</p>
+                <p data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">Customers Served</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-calendar3"></i></span>
+              </div>
+              <div class="counter-num">
+                <p>More than</p>
+                <p data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">Years of Experience</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-award-fill"></i></span>
+              </div>
+              <div class="counter-num">
+                <p>Over</p>
+                <p data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">Jobs created</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-people-fill"></i></span>
+              </div>
+              <div class="counter-num">
+                <p>With over</p>
+                <p data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">Friends made!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Counters Section -->
+    <!-- Start Portfolio Work Section -->
+    <section id="work" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Some photos from our gallery...
+              </h3>
+              <p class="subtitle-a">
+                Here are a some photos taken from our gallery, come past and take a selfie with us!
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="./img/getting started.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="./img/getting started.png" alt="outdoor cooking" loading="lazy" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">We get started bright and early... We're even ready for breakfast!</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Traditional potjies</span> / <span class="w-date">Jan 2023</span>
                     </div>
-                    <p>
-                        the traditional Venda Brothers Chisa-Nyama way!
-                    </p>
-                    <br>
-                    <div class="img-container">
-                        <img src="./img/slaw-1.jpg" alt="fresh cut vegetables">
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="./gallery.html"> <span class="bi bi-coin"></span></a>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-        <!-- Map -->
-        <section id="map" class="section">
-            <div class="title">
-                <h2>on the <span>map</span></h2>
-            </div>
-            <div class="map-card">
-                <div class="map-container">
-                    <div class="img-container">
-                        <img src="./map.png" alt="pap and sauce">
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="./img/chakalaka-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="./img/chakalaka-2.png" alt="chakalaka cooking" loading="lazy" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">We make the best Chakalaka and Seshebo you've ever tasted</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Traditional Cooking</span> / <span class="w-date">Feb 2022</span>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- Services -->
-        <section id="services" class="section">
-            <div class="title">
-                <h2>our <span>business</span></h2>
-            </div>
-            <div class="services-card">
-                <p>
-                    Located on Voortrekker Road opposite the Lakeside Taxi Station,
-                    next to the Lakeside Mall Deliveries Entrance...
-                </p>
-                <div class="img-container">
-                    <img src="./img/beef-1.jpg" alt="pap and sauce">
-                </div>
-                <p>
-                    There's always a queue so you cant miss us!
-                    Come and join us for the best Chisa-Nyama in Ekurhuleni!
-                </p>
-                <br>
-                <div class="img-container">
-                    <img src="./img/lunch-1.jpg" alt="sauce cooking">
-                </div>
-            </div>
-            <div class="services-card">
-                <p>
-                    Smokey, flame-seered traditional chisa-nyama;
-                    Chicken, Beef AND Wors on the fires!
-                    Piping HOT perfectly prepared pap from the potjies and the sauces...
-                </p>
-                <div class="img-container">
-                    <img src="./img/pap-sauce-1.jpg" alt="pap and sauce">
-                </div>
-                <p>
-                    The SAUCES! Chakalaka, Beans in Tomato Sauce
-                    and on the side... Fresh and creamy coleslaw!
-                </p>
-                <div class="img-container">
-                    <img src="./img/chakalaka-2.jpg" alt="pap and sauce">
-                </div>
-                <br>
-                <h4>from ONLY R35 per plate, you cant miss it and no one leaves hungry, for sho!</h4>
-            </div>
-        </section>
-        <!-- Gallery -->
-        <section id="gallery" class="section">
-            <div class="title">
-                <h2>Venda Brothers <span>Chisa-Nyama</span></h2>
-            </div>
-            <div class="gallery-card">
-                <p>
-                    The atmosphere is relaxed and family friendly and we pride ourselves
-                    on making the best Chisa-Nyama you've ever tried.
-                </p>
-                <div class="img-container">
-                    <img src="./img/wors-1.jpg" alt="a fire for cooking">
-                </div>
-            </div>
-            <div class="gallery-card">
-                <p>
-                    plenty of seating is available and you can even get it as a takeaway for the road!
-                    Experienced chisa-chefs and generous portions means no one ever leaves hungry!
-                </p>
-                <div class="img-container">
-                    <img src="./img/chakalaka-1.jpg" alt="a fire for cooking">
-                </div>
-            </div>
-        </section>
-        <!-- Contact -->
-        <section id="contact" class="section">
-            <div class="title">
-                <h2>contact <span>us</span></h2>
-            </div>
-            <div class="contact-container">
-                <div class="contact contact-card" id="contact">
-                    <div class="img-container">
-                        <img src="./img/1664481848783.jpg" alt="pap and sauce">
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="./gallery.html"> <span class="bi bi-cash"></span></a>
                     </div>
-                    <p>
-                        For any questions or suggestions, complaints or compliments,
-                        or even just to talk about chisa-nyama, fill out this quick form and we'll get in touch soon!
-                    </p>
-                    <h4>PLACE YOUR ORDER ONLINE HERE!</h4>
-                    <form name="contact-form" method="POST" data-netlify="true" class="contact-form" id="contact-form" >
-                        <div class="input-control input-control-2">
-                            <input type="text" required placeholder="Your name" name="name">
-                            <input type="email" required placeholder="Your email" name="email">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="./img/pap-sauce 1.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="./img/pap-sauce 1.png" alt="An image of pap and sauce" loading="lazy" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">We stick to the most popular, time tested favourites</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Menu choices</span> / <span class="w-date">Mar 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="./gallery.html"> <span class="bi bi-easel2-fill"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="./img/open fire.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="./img/open fire.png" alt="An image of a bbq" loading="lazy" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">We cook our meat the right way, on fire and coals, as nature intended</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Environmental</span> / <span class="w-date">Apr 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="./gallery.html"> <span class="bi bi-shop"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="./img/grillers.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="./img/grillers.png" alt="An image of a grill master" loading="lazy" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Our grillers are specially selected from the cream of the crop</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">A top team</span> / <span class="w-date">May 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="./gallery.html"> <span class="bi bi-shop-window"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="./img/takeaway 1.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="./img/takeaway 1.png" alt="An image of takeaways" loading="lazy" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Don't have time for cooking, share us with the whole family</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Traditional Family Values</span> / <span class="w-date">Nov 2021</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="./gallery.html"> <span class="bi bi-person-lines-fill"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Portfolio Work Section -->
+    <!-- Start Testimonials/References Section -->
+    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.png)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/testimonial-2.png" alt="A profile picture of a man" loading="lazy" class="rounded-circle b-shadow-a">
+                      <span class="author">Ravindra Laloo-Gopal</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Working with Sean in a junior position can be quite a daunting experience as he's always on top,
+                        things and knows when everything should be happening.
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End Ravi testimonial item -->
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/testimonial-6.png" alt="A profile picture of a man" loading="lazy" class="rounded-circle b-shadow-a">
+                      <span class="author">Sarel Nel</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Sean has always been very professional and particularly serious about customer service, like a pet project almost, 
+                        he likes to make sure clients are actually happy.
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End Sarel testimonial item -->
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/testimonial-3.png" alt="A profile picture of a man" loading="lazy" class="rounded-circle b-shadow-a">
+                      <span class="author">Matthew Courtney</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Always ready with extra literature and study materials for new team members, Sean really gets the
+                        new hires into the fold quickly.
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End Matthew testimonial item -->
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/testimonial-5.png" alt="A profile picture of a man" loading="lazy" class="rounded-circle b-shadow-a">
+                      <span class="author">Brendon Latimer</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Having worked with Sean in a Very Technical area, I always appreciated his thoroughness and, 
+                        in particular, his attention to detail.
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End Brendon testimonial item -->
+              </div>
+              <div class="swiper-pagination"></div>
+              </div>
+            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
+            This item is to use a Carousel Instead
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div><!-- End Testimonials/References Section -->
+    <!-- Start Blog/Future Plans Section -->
+    <section id="plans" class="blog-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                What's coming up in the future for us...
+              </h3>
+              <p class="subtitle-a">
+                Where will the future take us? Let's find out together!
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <img src="./img/fresh 1.png" alt="fresh cut veges" loading="lazy" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Launch Weekday Breakfast</h6>
+                  </div>
+                </div>
+                <h3 class="card-title">We've got the service trailer ready to go</h3>
+                <p class="card-description">
+                  At Venda Brothers Chysa Nyama we are passionate about making food
+                  and we want to encourage all our friends to start the day right!
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="./img/logo.png" alt="Sean's profile picture" loading="lazy" class="avatar rounded-circle">
+                    <span class="author">Let's launch Weekday Breakfasts together</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <img src="./img/cn 1.png" alt="meat cooking" loading="lazy" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Expand our local footprint</h6>
+                  </div>
+                </div>
+                <h3 class="card-title">While keeping a keen eye on the business opportunities presented</h3>
+                <p class="card-description">
+                  As a growing local business in the heart of our community we are excited to be involved
+                  in goings on in and around our beautiful city!
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="./img/logo.png" alt="Sean's profile picture'" loading="lazy" class="avatar rounded-circle">
+                    <span class="author">Growing Small Business Together</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <img src="./img/vbcn 1.png" alt="An image of smart contracts" loading="lazy" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Community is at the heart of it</h6>
+                  </div>
+                </div>
+                <h3 class="card-title">With our communities and neighbours, we're stronger together</h3>
+                <p class="card-description">
+                  Building critical ties to the community and essential stakeholders is vital for the future
+                  generations of South African's we're raising today!
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="./img/logo.png" alt="Sean's profile picture" loading="lazy" class="avatar rounded-circle">
+                    <span class="author">Building Community</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Blog/Future Plans Section -->
+    <!-- Start Contact Me Section -->
+    <section id="contact-form" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.png)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        Want to get in contact...?
+                      </h5>
+                      <br>
+                      <p>
+                        Drop us a quick message and we'll get back to you as soon as we're away from the fires...
+                      </p>
+                    </div>
+                    <div>
+                      <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Name..." required="true">
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Email..." required="true">
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject..." required="true">
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea class="form-control" name="message" rows="3" placeholder="Message..." required="true"></textarea>
+                            </div>
+                          </div>
+                          <div styles="align-items-center" data-netlify-recaptcha="true"></div>
+                          <div class="col-md-12 text-center">
+                            <br>
+                            <button type="submit" class="button button-a button-big button-rouded" id="contact-btn">Send</button>
+                          </div>
                         </div>
-                        <div class="input-control">
-                            <input type="text" required placeholder="Subject" name="subject">
-                        </div>
-                        <div class="input-control">
-                            <textarea name="message" id="message" cols="40" rows="5" placeholder="Message here" required></textarea>
-                        </div>
-                        <div class="submit-btn">
-                            <button type="submit" value="Send" name="button" class="submit-btn" id="submit-btn" />
-                            <span class="btn-text">Send</span>
-                            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
-                        </div>
-                    </form>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        We would love to hear from you... 
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        Whether you're new in town or as old around these parts as the furniture, 
+                        there's always a friendly smile and a full plate of chysa nyama waiting
+                        for you At Venda Brothers Chysa Nyama.
+                        <br>
+                        Come visit us and let's make some memories today!
+                      </p>
+                        <ul>
+                          
+                        </ul>
+                        <p>
+                        </p>
+                      <ul class="list-ico">
+                        <li><span class="bi bi-geo-alt"></span><a href="https://www.google.com/maps/@-26.1832622,28.3164141,16.87z"> Voortrekker Road, Benoni</a></li> 
+                        <li><span class="bi bi-envelope"></span><a href="mailto:chysanyama@gmail.com?subject=Yebo, Venda Brothers!"> chysanyama@gmail.com</a></li>
+                        <li><span class="bi bi-phone"></span><a href="tel: +27723907241"> 072 390 7241 </a></li>
+                      </ul>
+                      <p>
+                      </p>
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a href="https://www.instagram.com/" target="_blank" title="Sean's GitHub "><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank" title="Sean's at freeCodeCamp "><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                        <li><a href="https://www.twitter.com/" target="_blank" title="Sean's Twitter "><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-        <!-- Footer -->
-        <footer id="footer">
-            <p>
-                <a href="/img/menu_03.jpg" target="_blank" class="btn btn-white" download>
-                    Download Our Menu!
-                </a>
-            </p>
-            <br>
-            <p>
-                copyright &copy <a href="https://www.github.com/seandylan1982">sean dylan patterson</a>
-                <span id="date"></span>
-                - all rights reserved.
-            </p>
-        </footer>
-        <!-- Back to top button -->
-        <a href="#home" class="scroll-link top-link">
-            <i class="fas fa-arrow-up"></i>
-        </a>
-        <!-- javascript -->
-        <script src="app.js"></script>
-    </body>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Me Section -->
+  </main><!-- End #Main Section -->
+  <!-- Start Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright 2023 <a href="https://github.com/SeanDylan1982/VendaBrothers-ChysaNyama" style="color:#f2f2f2" title="Sean's GitHub" target="_blank"><strong>Venda Brothers Chysa Nyama</strong></a>. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer Section -->
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js" defer></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+  <script src="assets/vendor/typed.js/typed.min.js" defer></script>
+  <script src="assets/vendor/php-email-form/validate.js" defer></script>
+  <!-- Main JS File -->
+  <script src="assets/js/main.js" defer></script>
+</body>
 </html>

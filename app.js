@@ -1,97 +1,226 @@
-// Element.getBoundingClientRect() method returns the size of an element and its position relative to the viewport.
-// pageYOffset is a read - only window property that returns the number of pixels the document has been scrolled vertically.
-// slice extracts a section of a string without modifying original string
-// offsetTop - A Number, representing the top position of the element, in pixels
-//
-//The if statement:
-// if(condition such as containerHeight === 0) {
-//      this set of brackets represents the THEN part of the if statement
-//      then change it to the cosen value
-// }
-// else this rperesents the alternative to the then statement
-
-
-
-// ********** set date ************
-
-const date = document.getElementById("date");
-    date.innerHTML = new Date().getFullYear();
-
-
-// ********** close links ************
-
-const navToggle = document.querySelector(".nav-toggle");
-const linksContainer = document.querySelector(".links-container");
-const links = document.querySelector(".links");
-
-navToggle.addEventListener("click", function(){
-/*
-    This method has issues due to fixed height in css of the links container / show links
-    linksContainer.classList.toggle("show-links");
+/**
+main.js for Sean Dylan Patterson - Portfolio
 */
-    const containerHeight = linksContainer.getBoundingClientRect().height;
-    const linksHeight = links.getBoundingClientRect().height;
-    // Dynamically sets the height of the links container to the retrieved value from the linksHeight query
-    if(containerHeight === 0){
-        linksContainer.style.height = `${linksHeight}px`;
+(function() {
+"use strict";
+
+/**
+ * Easy selector helper function
+ */
+const select = (el, all = false) => {
+    el = el.trim()
+    if (all) {
+    return [...document.querySelectorAll(el)]
     } else {
-        linksContainer.style.height = 0;
+    return document.querySelector(el)
+    }
+}
+
+/**
+ * Easy event listener function
+ */
+const on = (type, el, listener, all = false) => {
+    let selectEl = select(el, all)
+    if (selectEl) {
+    if (all) {
+        selectEl.forEach(e => e.addEventListener(type, listener))
+    } else {
+        selectEl.addEventListener(type, listener)
+    }
+    }
+}
+
+/**
+ * Easy on scroll event listener 
+ */
+const onscroll = (el, listener) => {
+    el.addEventListener('scroll', listener)
+}
+
+/**
+ * Navbar links active state on scroll
+ */
+let navbarlinks = select('#navbar .scrollto', true)
+const navbarlinksActive = () => {
+    let position = window.scrollY + 200
+    navbarlinks.forEach(navbarlink => {
+    if (!navbarlink.hash) return
+    let section = select(navbarlink.hash)
+    if (!section) return
+    if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+        navbarlink.classList.add('active')
+    } else {
+        navbarlink.classList.remove('active')
+    }
+    })
+}
+window.addEventListener('load', navbarlinksActive)
+onscroll(document, navbarlinksActive)
+
+/**
+ * Scrolls to an element with header offset
+ */
+const scrollto = (el) => {
+    let header = select('#header')
+    let offset = header.offsetHeight
+
+    if (!header.classList.contains('header-scrolled')) {
+    offset -= 16
     }
 
+    let elementPos = select(el).offsetTop
+    window.scrollTo({
+    top: elementPos - offset,
+    behavior: 'smooth'
+    })
+}
+
+/**
+ * Toggle .header-scrolled class to #header when page is scrolled
+ */
+let selectHeader = select('#header')
+if (selectHeader) {
+    const headerScrolled = () => {
+    if (window.scrollY > 100) {
+        selectHeader.classList.add('header-scrolled')
+    } else {
+        selectHeader.classList.remove('header-scrolled')
+    }
+    }
+    window.addEventListener('load', headerScrolled)
+    onscroll(document, headerScrolled)
+}
+
+/**
+ * Back to top button
+ */
+let backtotop = select('.back-to-top')
+if (backtotop) {
+    const toggleBacktotop = () => {
+    if (window.scrollY > 100) {
+        backtotop.classList.add('active')
+    } else {
+        backtotop.classList.remove('active')
+    }
+    }
+    window.addEventListener('load', toggleBacktotop)
+    onscroll(document, toggleBacktotop)
+}
+
+/**
+ * Mobile nav toggle
+ */
+on('click', '.mobile-nav-toggle', function(e) {
+    select('#navbar').classList.toggle('navbar-mobile')
+    this.classList.toggle('bi-list')
+    this.classList.toggle('bi-x')
+})
+
+/**
+ * Mobile nav dropdowns activate
+ */
+on('click', '.navbar .dropdown > a', function(e) {
+    if (select('#navbar').classList.contains('navbar-mobile')) {
+    e.preventDefault()
+    this.nextElementSibling.classList.toggle('dropdown-active')
+    }
+}, true)
+
+/**
+ * Scrool with ofset on links with a class name .scrollto
+ */
+on('click', '.scrollto', function(e) {
+    if (select(this.hash)) {
+    e.preventDefault()
+
+    let navbar = select('#navbar')
+    if (navbar.classList.contains('navbar-mobile')) {
+        navbar.classList.remove('navbar-mobile')
+        let navbarToggle = select('.mobile-nav-toggle')
+        navbarToggle.classList.toggle('bi-list')
+        navbarToggle.classList.toggle('bi-x')
+    }
+    scrollto(this.hash)
+    }
+}, true)
+
+/**
+ * Scroll with ofset on page load with hash links in the url
+ */
+window.addEventListener('load', () => {
+    if (window.location.hash) {
+    if (select(window.location.hash)) {
+        scrollto(window.location.hash)
+    }
+    }
 });
 
-
-// ********** fixed navbar ************
-
-const navbar = document.getElementById("nav");
-const topLink = document.querySelector(".top-link");
-
-window.addEventListener("scroll", function(){
-    const scrollHeight = this.window.pageYOffset;
-    const navHeight = navbar.getBoundingClientRect().height;
-    if(scrollHeight > navHeight) {
-        navbar.classList.add("fixed-nav");
-    } else {
-        navbar.classList.remove("fixed-nav");
-    }
-
-    if(scrollHeight > 750) {
-        topLink.classList.add("show-link");
-    } else {
-        topLink.classList.remove("show-link");
-    }
-})
-
-
-// ********** smooth scroll ************
-
-// Select internal page links with precision
-const scrollLinks = document.querySelectorAll(".scroll-link");
-
-scrollLinks.forEach(function (link) {
-    link.addEventListener("click", function (e) {
-        // This prevents the default which is currently out of frame
-        e.preventDefault();
-        // Find internal link reference # to dynamically set internal links
-        const  id = e.currentTarget.getAttribute("href").slice(1);
-        const element = document.getElementById(id);
-        // Calculate the height
-        const navHeight = navbar.getBoundingClientRect().height;
-        const containerHeight = linksContainer.getBoundingClientRect().height;
-        const fixedNav = navbar.classList.contains("fixed-nav");
-        let position = element.offsetTop - navHeight;
-
-        if(!fixedNav){
-            position = position - navHeight;
-        }
-
-        if(navHeight > 82){
-            position = position + containerHeight;
-        }
-
-        window.scrollTo({
-            left:0,top:position,
-        });
-        linksContainer.style.height = 0;
+/**
+ * Intro type effect
+ */
+const typed = select('.typed')
+if (typed) {
+    let typed_strings = typed.getAttribute('data-typed-items')
+    typed_strings = typed_strings.split(',')
+    new Typed('.typed', {
+    strings: typed_strings,
+    loop: true,
+    typeSpeed: 100,
+    backSpeed: 50,
+    backDelay: 2000
     });
-})
+}
+
+/**
+ * Initiate portfolio lightbox 
+ */
+const portfolioLightbox = GLightbox({
+    selector: '.portfolio-lightbox'
+});
+
+/**
+ * Testimonials slider
+ */
+new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true
+    }
+});
+
+/**
+ * Portfolio details slider
+ */
+new Swiper('.portfolio-details-slider', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+    },
+    pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true
+    }
+});
+
+/**
+ * Preloader
+ */
+let preloader = select('#preloader');
+if (preloader) {
+    window.addEventListener('load', () => {
+    preloader.remove()
+    });
+}
+
+})()
