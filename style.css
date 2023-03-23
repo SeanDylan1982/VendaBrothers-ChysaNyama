@@ -1650,6 +1650,7 @@ html {
   filter: grayscale(100%);
   scale: 1;
   transition: all .5s ease-in-out;
+  border: 1px solid #1a1a1a;
 }
 
 #menu-icon:hover {
