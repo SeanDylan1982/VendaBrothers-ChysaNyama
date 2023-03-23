@@ -1391,22 +1391,20 @@ html {
 }
 
 .tooltip {
-  position: relative;
-  display: grid;
-  /* visibility: visible;
-  opacity: 1; */
-  /* width: 65px; */
+  position: fixed;
+  display: static;
+  visibility: visible;
+  opacity: 0;
+  width: 65px;
   height: 65px;
   font-size: 2rem;
   top: 20%;
   left: -10%;
-  margin-left: 0px;
   margin: 20px 0;
   padding: 10px 0;
   transition: all 0.7s ease-in-out;
   text-align: centre;
-  width: 150px;
-  z-index: 99;
+  z-index: 9;
 }
 
 .tooltip .tooltip-text {
@@ -1639,4 +1637,24 @@ html {
   width: 100%;
   bottom: 0px;
   align-items: center;
+}
+
+#menu-icon {
+  position: fixed;
+  display: block;
+  top: 670px;
+  left: 10px;
+  z-index: 99;
+  width: 100px;
+  height: 100px;
+  filter: grayscale(100%);
+  scale: 1;
+  transition: all .5s ease-in-out;
+}
+
+#menu-icon:hover {
+  filter: grayscale(0%);
+  scale: 1.2;
+  transition: all .5s ease-in-out;
+  box-shadow: 0 0 10px #fffc31;
 }
