@@ -5,34 +5,22 @@
   <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <!-- Favicon and Home Button Logo -->
-  <link href="assets/img/favicon.ico" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" width="42" height="42" alt="The website's logo">
+  <link href="./img/logo.png" rel="icon">
+  <link href="./img/logo.png" rel="apple-touch-icon" width="42" height="42" alt="The website's logo">
   <!-- Vendor CSS Stylesheet Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <!-- Main CSS Stylesheet File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
 </head>
 <body>
   <!-- Start Header Section -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
       <!-- <h1 class="logo"><a href="index.html">SDP</a><span class="hovertext" data-hover="Sean Dylan Patterson "></h1> -->
-      <a href="index.html" class="logo"><img src="assets/img/apple-touch-icon.png" width="42" height="42" alt="The website's logo" class="img-fluid"></a>
-      <!-- <div id="socials" class="socials">
-        <ul>
-          <li><a href="https://www.linkedin.com/in/seandylanpatterson/"><span class="hovertext" data-hover="Sean on LinkedIn"></span><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-          <li><a href="https://www.github.com/SeanDylan1982/"><span class="hovertext" data-hover="Sean's GitHub"></span><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
-          <li><a href="https://www.gitcoin.co/SeanDylan1982/"><span class="hovertext" data-hover="Sean on Gitcoin"></span><span class="ico-circle"><i class="bi bi-globe"></i></span></a></li>
-          <li><a href="https://www.freecodecamp.org/Sean-Patterson/"><span class="hovertext" data-hover="Sean's at freeCodeCamp"></span><span class="ico-circle"><i class="bi bi-code-slash"></i></span></a></li>
-          <li><a href="https://www.facebook.com/justseanreally/"><span class="hovertext" data-hover="Sean's Facebook"></span><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
-          <li><a href="https://www.twitter.com/@SeanDylan1982/"><span class="hovertext" data-hover="Sean's Twitter"></span><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
-          <li><a href="https://www.instagram.com/SeanDylan1982/"><span class="hovertext" data-hover="Sean on Instagram"></span><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-          <li><a href="https://www.tiktok.com/@SeanDylan1982"><span class="hovertext" data-hover="Sean on TikTok"></span><span class="ico-circle"><i class="bi bi-tiktok"></i></span></a></li>
-        </ul>
-      </div> -->
+      <a href="./index.html" class="logo"><img src="./img/logo.png" width="42" height="42" alt="The website's logo" class="img-fluid"></a>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="#hero">Home</a></li>
@@ -46,111 +34,99 @@
       </nav><!-- .navbar -->
     </div>
   </header><!-- End Header Section -->
-
   <!-- Start Background Image Section -->
-  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+  <div class="hero hero-single route bg-image" style="background-image: url(./img/venda-brothers-background-1.jpg)">
     <div class="overlay-mf"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <h2 class="hero-title mb-2">Portfolio Details</h2>
+          <h2 class="hero-title mb-2">Photo Gallery</h2>
           <ol class="breadcrumb d-flex justify-content-center">
             <li class="breadcrumb-item">
               <a href="#">Home</a>
             </li>
-            <li class="breadcrumb-item active">Portfolio Details</li>
+            <li class="breadcrumb-item active">Photo Gallery</li>
           </ol>
         </div>
       </div>
     </div>
   </div>   <!-- End Background Image Section -->
-
   <!-- Start #Main Section -->
-  <div id="main">
-
+  <main id="gallery-main">
     <!-- Start Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <br><br>
-                  <img src="assets/img/portfolio-details-1.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <br><br>
-                  <img src="assets/img/portfolio-details-2.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <br><br>
-                  <img src="assets/img/portfolio-details-3.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <br><br>
-                  <img src="assets/img/portfolio-details-4.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <br><br>
-                  <img src="assets/img/portfolio-details-5.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <br><br>
-                  <img src="assets/img/portfolio-details-6.png" alt="">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <p> &nbsp;</p>
-              <h3>My Portfolio Overview</h3>
-              <ul>
-                <li><strong>Categories</strong>: Web Design and Development, Basic Web3 Infrasctructure and Execution</li>
-                <li><strong>Technologies</strong>: HTML5, CSS3, JS, PHP, NFTs, Cryptocurrencies, Crypto/Web3 ID Wallets, User Login Systems, Feedback Forms, Payment Portals</li>
-                <li><strong>Complexity</strong>: Modern HTML5 and CSS3, Solidity Smart Contracts, eCommerce Platform, Databases, APIs</li>
-                <li><strong>Just For YOU!</strong>: <a href="https://grouchygorillas.netlify.app">Feel Free to <strong>Mint Yourself a GrouchyGorillas NFT!</strong> They're only 10MATIC, which is around $6 or $7 depending on rates</a></li>
-              </ul>
-            </div>
-          <br>
-          </section>
-          <section id="info">
-            <div class="container">
-            <div class="row-lg-1">
-            <div id="info" styles="width: 1000; min-height:400px; text-align: justify-content-center">
-            <div style="text-align: center; background-color:#dddddd; margin:auto; border:solid 1px #9a9a9a; border-radius: 1%; ">
-              <br>
-              <h3>Some information on my Projects </h3>
-              <br>
-              <div style="text-align: left">
-                <ul>
-                  <li>I have a wide and diverse range of interests and abilities, I'm a very inquisitive person so I'm always investigating new technologies and ideas. I watch a lot of tutorials online and adapt what I learn there to projects I can undertake myself.</li>
-                  <br>
-                  <li>The first collection of 10'000 1:1 Profile Pic NFTs - HapticHippies (HaHI) was created out of interest mostly to see if I could accomplish it in a reasonable timeframe, it took about 1 week with a lot of back and forth and trial by error.</li>
-                  <br>
-                  <li>The NFT Minter dApp for the GrouchyGorillas (GG) 10'000 1:1 Profile Pic NFT Collection website was my 2nd NFT project and this was completed much quicker, about 2 days in total, I learned a lot from the missteps I made with the HapticHippies NFT Collection.</li>
-                  <br>
-                  <li>This portfolio website, and both of the eCommerce shop websites were created with the help and guidance of a tutorial online and the website I made for the real person, justink.co.za has unfortunately gone out of business since and I do not have any media available for it.</li></p>
-                  <br>
-                </ul>
-                <br>
-            </div>
-          </div>
-          </div>
+    <!-- Container for the image gallery -->
+    <div class="container">
+
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+          <img src="./img/background.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+          <img src="./img/cn-6.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+          <img src="./img/Getting started the right way.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+          <img src="./img/1664481848783.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+          <img src="./img/chicken 1.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+          <img src="./img/chakalaka-cooking-1.jpg" style="width:100%">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="./img/background.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
         </div>
+        <div class="column">
+          <img class="demo cursor" src="./img/cn-6.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./img/Getting started the right way.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./img/1664481848783.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./img/chicken 1.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./img/chakalaka-cooking-1.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
         </div>
       </div>
-    </section><!-- End Portfolio Details Section -->
+    </div> 
   </main><!-- End #Main Section -->
   <!-- Start Footer Section -->
-  <footer>
+  <footer id="gallery-footer">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-            <p class="copyright">&copy; Copyright 2022 <a href="https://github.com/SeanDylan1982" style="color:#f2f2f2" title="Sean's GitHub" target="_blank"><strong>Sean Dylan Patterson</strong></a>. All Rights Reserved</p>
+            <p class="copyright">&copy; Copyright 2023 <a href="https://github.com/SeanDylan1982/VendaBrothers-ChysaNyama" style="color:#f2f2f2" title="Venda Brothers Chysa Nyama" target="_blank"><strong>Venda Brothers Chysa Nyama</strong></a>. All Rights Reserved</p>
           </div>
         </div>
       </div>
