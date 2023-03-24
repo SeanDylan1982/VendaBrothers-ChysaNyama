@@ -73,8 +73,8 @@ a:hover {
 }
 
 .avatar {
-  width: 32px;
-  height: 32px;
+  width: 132px;
+  height: 132px;
   margin-right: 4px;
   overflow: hidden;
 }
@@ -91,6 +91,58 @@ a:hover {
   }
 }
 
+.gallery-title {
+  position: relative;
+  top: -70px;
+}
+
+.gallery-container {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  top: -100px;
+  left: 0%;
+  width: 1000px;
+  margin: auto;
+  height: 600px;
+  max-width: 80rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 2rem;
+  object-fit: fill;
+  border-radius: 10px;
+}
+.gallery {
+  position: absolute;
+  width: 1000px;
+  height: 600px;
+  display: grid;
+  place-items: center;
+  transition: all 0.9s ease-in-out;
+  text-align: center;
+  border-radius: 10px;
+}
+.gallery img {
+  height: 500px;
+  border-radius: 10px;
+}
+.gallery h1 {
+  font-size: 5rem;
+}
+.gallery:nth-child(1) h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.breadcrumb {
+  position: relative;
+  top: -60px;
+}
+
 .overlay-mf {
   background-color: #004799;
 }
@@ -101,6 +153,20 @@ a:hover {
   left: 0px;
   padding: 0;
   height: 100%;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.overlay {
+  background-color: #004799;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 60%;
   width: 100%;
   opacity: 0.7;
 }
@@ -218,6 +284,7 @@ a:hover {
   margin: 0 15px 0 0;
   box-shadow: 0 0 0 3px #004799;
   transition: all 500ms ease;
+  margin: 0 20px;
 }
 .socials .ico-circle:hover {
   background-color: #004799;
@@ -235,10 +302,22 @@ a:hover {
 
 .list-ico {
   line-height: 1.8;
-}
-.list-ico span {
+  position: relative;
+  display: block;
+  text-align: center;
+  justify-content: center;
   color: #004799;
   margin-right: 10px;
+  font-size: 1.3rem;
+}
+.list-ico span {
+  position: relative;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  color: #004799;
+  margin-right: 10px;
+  font-size: 1.3rem;
 }
 
 /*------/ Ico Circle /------*/
@@ -864,10 +943,10 @@ a:hover {
   backface-visibility: hidden;
   background-color: rgb(220, 220, 220);
 }
-.work-box:hover img {
+.work-box img:hover {
   width: 400px;
   height: 300px;
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 .work-img {
@@ -1391,10 +1470,10 @@ html {
 }
 
 .tooltip {
-  position: fixed;
-  display: static;
+  position: absolute;
+  display: block;
   visibility: visible;
-  opacity: 0;
+  opacity: 1;
   width: 65px;
   height: 65px;
   font-size: 2rem;
@@ -1408,18 +1487,8 @@ html {
 }
 
 .tooltip .tooltip-text {
-  visibility: hidden;
-  width: 700px;
-  height: 800px;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
   position: absolute;
-  z-index: 3;
-  /* opacity: 0; */
-  transition: all 0.7s ease-in-out;
-  overflow-y: scroll;
-  text-align: centre;
+  visibility: hidden;
 }
 
 .tooltip .tooltip-text::-webkit-scrollbar {
@@ -1443,6 +1512,16 @@ html {
 .tooltip:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
+  width: 700px;
+  height: 800px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  z-index: 3;
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+  overflow-y: scroll;
+  text-align: centre;
 }
 
 #sidebar {
@@ -1454,13 +1533,13 @@ html {
   top: 20%;
   right: -10%;
   margin: 10px;
-  /* opacity: 1; */
+  opacity: 1;
   z-index: 3;
   transition: all .5s ease-in-out;
 }
 
 #sidebar:hover {
-  /* opacity: 1; */
+  opacity: 1;
   transition: all .5s ease-in-out;
 }
 
@@ -1522,11 +1601,11 @@ html {
 
 .fa:hover {
   scale: 1.2;
-  transform: translateY(-10px);
-  transform: translateX(10px);
+  transform: translateY(-5px);
+  transform: translateX(5px);
   transition: all .5s ease-in-out;
-  text-shadow: 0 0 8px #f8ff71;
-  color: #111;
+  text-shadow: 0 0 5px #f8ff71;
+  color: #fff;
 }
 
 html::-webkit-scrollbar {
@@ -1539,114 +1618,14 @@ html {
   scroll-behavior: smooth;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-#gallery-main {
-  position: relative;
-  display: flex;
-  top: 260px;
-}
-
-#gallery-footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0px;
-  align-items: center;
-}
-
 #menu-icon {
   position: fixed;
   display: block;
-  top: 670px;
-  left: 10px;
+  top: 5px;
+  left: 5px;
   z-index: 99;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   filter: grayscale(100%);
   scale: 1;
   transition: all .5s ease-in-out;
@@ -1655,7 +1634,283 @@ html {
 
 #menu-icon:hover {
   filter: grayscale(0%);
-  scale: 1.2;
+  scale: 1.1;
   transition: all .5s ease-in-out;
   box-shadow: 0 0 10px #fffc31;
+}
+
+.phone-number {
+  position: relative;
+  top: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.company-name {
+  position: relative;
+  font-size: 2rem;
+  color: #f1f1f1;
+  text-decoration: none;
+  top: 5px;
+  left: -25px;
+}
+
+.form-inline {
+  position: relative;
+  display: flex;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.form-inline input {
+  position: relative;
+  right: -50px;
+  width: 250px;
+}
+
+.slider-container {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  top: -30px;
+  left: -10%;
+  width: 1000px;
+  margin: auto;
+  height: 600px;
+  max-width: 80rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  object-fit: fill;
+  border-radius: 10px;
+}
+.slide {
+  position: absolute;
+  width: 1000px;
+  height: 600px;
+  display: grid;
+  place-items: center;
+  transition: all 0.9s ease-in-out;
+  text-align: center;
+  border-radius: 10px;
+}
+.slide-img {
+  height: 600px;
+  border-radius: 10px;
+}
+.slide h1 {
+  font-size: 5rem;
+}
+.slide:nth-child(1) h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+td {
+  position: relative;
+  top: 5px;
+  left: 0%;
+  padding: 5px 30px;
+}
+
+.container-fluid {
+  position: relative;
+  top: 50px;
+  left: 350px;
+}
+
+.light {
+  background-color: #c2c2c2;
+}
+
+
+#form-control {
+  position: relative;
+  top: -950px;
+  left: 80%;
+  width: 500px;
+  height: 450px;
+}
+
+#form-control input,
+#form-control textarea {
+  width: 100%;
+  margin: 10px 0;
+}
+
+#form-control label {
+  width: 100%;
+  background-color: #c2c2c2;
+}
+
+#form-control h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin: 20px 0;
+}
+
+#club-phone,
+#club-address,
+#club-postal {
+  margin: 15px 0;
+}
+
+#executive-details {
+  position: relative;
+  left: -250px;
+}
+
+.gallery-container {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  top: -100px;
+  left: 0%;
+  width: 1000px;
+  margin: auto;
+  height: 600px;
+  max-width: 80rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 2rem;
+  object-fit: fill;
+  border-radius: 10px;
+}
+.gallery {
+  position: absolute;
+  width: 1000px;
+  height: 600px;
+  display: grid;
+  place-items: center;
+  transition: all 0.9s ease-in-out;
+  text-align: center;
+  border-radius: 10px;
+}
+.gallery img {
+  height: 500px;
+  border-radius: 10px;
+}
+.gallery h1 {
+  font-size: 5rem;
+}
+.gallery:nth-child(1) h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+#albums {
+  position: relative;
+  top: -32px;
+  left: -275px;
+}
+
+#notices {
+  position: relative;
+  margin: 50px 0;
+  padding: 50px 0;
+  left: -10%;
+}
+
+#popi-img {
+  position: absolute;
+  top: -25px;
+  left: -300px;
+  width: 200px;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+#popi-img:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#popi-disclaimer {
+  position: absolute;
+  top: 50px;
+  left: -300px;
+  width: 750px;
+  height: 500px;
+  border: 1px solid #1a1a1a44;
+  box-shadow: 0 0 15px #1a1a1a;
+  z-index: 2;
+  background-color: #f1f1f1;
+  margin: 20px;
+  padding: 20px;
+}
+
+#text-container {
+  position: relative;
+  top: -30px;
+  width: 800px;
+  height: 100%;
+}
+
+#directions-container {
+  position: relative;
+  top: -30px;
+  width: 800px;
+  height: 100%;
+}
+
+#header-logo {
+  position: relative;
+  font-size: 3rem;
+}
+
+.service-box {
+  overflow: hidden;
+  object-fit: fill;
+}
+
+.service-box img {
+  position: relative;
+  width: 350px;
+  height: 250px;
+}
+
+.portfolio-lightbox {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  object-fit: fill;
+}
+
+.portfolio-lightbox img {
+  position: relative;
+  width: 350px;
+  height: 250px;
+}
+
+#reviews{
+  position: relative;
+  top: -50px;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+#avatar-1,
+#avatar-2,
+#avatar-3 {
+  position: relative;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.card-img {
+  position: relative;
+  object-fit: none;
+  text-align: centre;
+  align-items: center;
+  justify-content: center;
 }
