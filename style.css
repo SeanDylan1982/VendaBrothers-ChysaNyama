@@ -1863,7 +1863,7 @@ td {
 }
 
 #header-logo {
-  position: relative;
+  position: static;
   font-size: 3rem;
 }
 
@@ -1913,4 +1913,12 @@ td {
   text-align: centre;
   align-items: center;
   justify-content: center;
+}
+
+#flame-logo {
+  position: relative;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  left: -40px;
 }
