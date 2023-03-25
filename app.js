@@ -260,3 +260,15 @@ function galleryCarousel(){
     });
 };
 setInterval(galleryCarousel, 5000);
+
+let menuBtn = document.getElementById('menu-button');
+let menuDisplay = document.getElementById('menu-display');
+
+menuBtn.addEventListener('mouseover', () => {
+    menuDisplay.classList.toggle('hidden');
+    menuDisplay.classList.toggle('active');
+});
+menuBtn.addEventListener('mouseleave', () => {
+    menuDisplay.classList.toggle('hidden');
+    menuDisplay.classList.toggle('active');
+})

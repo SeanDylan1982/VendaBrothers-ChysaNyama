@@ -1469,26 +1469,48 @@ html {
   justify-content: center;
 }
 
-.tooltip {
-  position: absolute;
-  display: block;
+/* .tooltip {
+  position: relative;
+  display: grid;
+  z-index: 3;
   visibility: visible;
   opacity: 1;
   width: 65px;
   height: 65px;
   font-size: 2rem;
   top: 20%;
-  left: -10%;
+  left: -100%;
+  margin-left: 0px;
   margin: 20px 0;
   padding: 10px 0;
   transition: all 0.7s ease-in-out;
   text-align: centre;
-  z-index: 9;
+  width: 150px;
 }
 
 .tooltip .tooltip-text {
-  position: absolute;
   visibility: hidden;
+  width: 700px;
+  height: 800px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+  overflow-y: scroll;
+  text-align: centre;
+} */
+
+.tooltip .tooltip-text {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tooltip:hover .text {
+  visibility: visible;
+  opacity: 1;
 }
 
 .tooltip .tooltip-text::-webkit-scrollbar {
@@ -1499,32 +1521,33 @@ html {
   scrollbar-width: none;
 }
 
-.tooltip p {
+/* .tooltip p {
   position: relative;
-  top: -30px;
+  top: 30px;
   left: 55px;
   font-size: 1rem;
   font-weight: 500;
   text-align: left;
   color: #f1f1f1;
-}
+} */
 
-.tooltip:hover .tooltip-text {
+/* .tooltip-text:hover {
   visibility: visible;
   opacity: 1;
+  top: 50px;
+  left: 100px;
   width: 700px;
   height: 800px;
   text-align: center;
   border-radius: 6px;
   padding: 5px;
   z-index: 3;
-  opacity: 0;
   transition: all 0.7s ease-in-out;
   overflow-y: scroll;
   text-align: centre;
-}
+} */
 
-#sidebar {
+/* #sidebar {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -1541,9 +1564,34 @@ html {
 #sidebar:hover {
   opacity: 1;
   transition: all .5s ease-in-out;
+} */
+
+/* #tt-menu {
+  position: relative;
+  top: 10%;
+  left: 10%;
+  transition: all 0.7s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 3;
 }
 
-#cl {
+#tt-menu:hover {
+  visibility: visible;
+  opacity: 1;
+  width: 700px;
+  height: 800px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  z-index: 3;
+  transition: all 0.7s ease-in-out;
+  overflow-y: scroll;
+  text-align: centre;
+  z-index: 3;
+} */
+
+/* #cl {
   position: absolute;
   display: grid;
   top: -265%;
@@ -1591,7 +1639,28 @@ html {
   width: 600px;
   height: 780px;
   transition: all .5s ease-in-out;
+} */
+/* 
+.tt {
+  visibility: visible;
 }
+
+.tt-text {
+  visibility: hidden;
+  z-index: 9;
+}
+
+.tt:hover .tt-text {
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+  display: grid;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 780px;
+  transition: all 0.5s ease-in-out;
+} */
 
 .fa {
   scale: 1;
@@ -1610,22 +1679,19 @@ html {
 
 html::-webkit-scrollbar {
   display: none;
-  scroll-behavior: smooth;
-}
-html {
-  -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
+  -ms-overflow-style: none;
 }
 
 #menu-icon {
-  position: fixed;
-  display: block;
-  top: 5px;
-  left: 5px;
-  z-index: 99;
-  width: 75px;
-  height: 75px;
+  position: absolute;
+  display: flex;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+  width: 65px;
+  height: 65px;
   filter: grayscale(100%);
   scale: 1;
   transition: all .5s ease-in-out;
@@ -1639,11 +1705,37 @@ html {
   box-shadow: 0 0 10px #fffc31;
 }
 
+#menu-display {
+  position: absolute;
+  top: 50px;
+  left: 250px;
+  opacity: 1;
+  width: 700px;
+  height: 800px;
+  z-index: 1;
+  transition: all .5s ease-in-out;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  z-index: -999;
+  transition: all .5s ease-in;
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 999;
+  transition: all.5s ease-in-out;
+}
+
 .phone-number {
   position: relative;
   top: 10px;
   text-align: center;
   font-size: 1.5rem;
+  color: #fff;
 }
 
 .company-name {
@@ -1750,18 +1842,6 @@ td {
   font-size: 2.3rem;
   margin: 20px 0;
 }
-
-#club-phone,
-#club-address,
-#club-postal {
-  margin: 15px 0;
-}
-
-#executive-details {
-  position: relative;
-  left: -250px;
-}
-
 .gallery-container {
   position: relative;
   align-items: center;
@@ -1802,50 +1882,6 @@ td {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
-}
-
-#albums {
-  position: relative;
-  top: -32px;
-  left: -275px;
-}
-
-#notices {
-  position: relative;
-  margin: 50px 0;
-  padding: 50px 0;
-  left: -10%;
-}
-
-#popi-img {
-  position: absolute;
-  top: -25px;
-  left: -300px;
-  width: 200px;
-  z-index: 1;
-  border-radius: 10px;
-}
-
-#popi-img:hover {
-  cursor: pointer;
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-#popi-disclaimer {
-  position: absolute;
-  top: 50px;
-  left: -300px;
-  width: 750px;
-  height: 500px;
-  border: 1px solid #1a1a1a44;
-  box-shadow: 0 0 15px #1a1a1a;
-  z-index: 2;
-  background-color: #f1f1f1;
-  margin: 20px;
-  padding: 20px;
 }
 
 #text-container {
@@ -1922,3 +1958,23 @@ td {
   height: 60px;
   left: -40px;
 }
+
+#flame-logo {
+  position: relative;
+  scale: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+#flame-logo:hover {
+  position: relative;
+  scale: 1.1;
+  transition: all 0.5s ease-in-out;
+}
+/* 
+#menu-display {
+  visibility: hidden;
+}
+
+#menu-button:hover #menu-display {
+  visibility: visible;
+} */

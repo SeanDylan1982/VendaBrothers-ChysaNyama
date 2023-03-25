@@ -1,0 +1,22 @@
+{
+	"id": "VendaBrothers-ChysaNyama",
+	"name": "VendaBrothers-ChysaNyama",
+	"type": "altostra",
+	"description": "An empty project template",
+	"created": "2023-03-24T14:27:15.593Z",
+	"blueprints": [
+		{
+			"version": "2019-10-24",
+			"connections": {},
+			"resources": {},
+			"metadata": {
+				"designer": {
+					"resourcePositions": {}
+				}
+			},
+			"id": "VendaBrothers-ChysaNyama",
+			"name": "VendaBrothers-ChysaNyama",
+			"unsafe": false
+		}
+	]
+}
