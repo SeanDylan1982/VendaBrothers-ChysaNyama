@@ -1428,7 +1428,7 @@ html {
   padding-top: 10px;
 }
 
-.tech-stack {
+/* .tech-stack {
   position: relative;
   left: -30px;
 }
@@ -1446,16 +1446,16 @@ html {
   height: 60px;
   margin: 0 7px;
   justify-content: space-between;
-}
+} */
 
-.tech-stack span {
+/* .tech-stack span {
   position: relative;
   left: 20px;
   margin: 0 0 0 12px;
   justify-content: space-between;
-}
+} */
 
-.pair-box {
+/* .pair-box {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1467,7 +1467,7 @@ html {
   position: relative;
   display: flex;
   justify-content: center;
-}
+} */
 
 /* .tooltip {
   position: relative;
@@ -1705,7 +1705,7 @@ html::-webkit-scrollbar {
   box-shadow: 0 0 10px #fffc31;
 }
 
-#menu-display {
+/* #menu-display {
   position: absolute;
   top: 50px;
   left: 250px;
@@ -1714,7 +1714,7 @@ html::-webkit-scrollbar {
   height: 800px;
   z-index: 1;
   transition: all .5s ease-in-out;
-}
+} */
 
 .hidden {
   visibility: hidden;
@@ -1900,7 +1900,7 @@ td {
 
 #header-logo {
   position: static;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .service-box {
@@ -1964,17 +1964,3 @@ td {
   scale: 1;
   transition: all 0.5s ease-in-out;
 }
-
-#flame-logo:hover {
-  position: relative;
-  scale: 1.1;
-  transition: all 0.5s ease-in-out;
-}
-/* 
-#menu-display {
-  visibility: hidden;
-}
-
-#menu-button:hover #menu-display {
-  visibility: visible;
-} */
