@@ -790,11 +790,12 @@ a:hover {
 }
 .about-mf .about-img {
   margin-bottom: 2rem;
-  width: 500px;
-  height: 300px;
+  width: 550px;
+  height: 550px;
 }
 .about-mf .about-img img {
-  margin-left: 10px;
+  margin: 0 10px;
+  z-index: 2;
 }
 @media (min-width: 767px) {
   .about-mf .box-pl2 {
