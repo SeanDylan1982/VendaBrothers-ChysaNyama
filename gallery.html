@@ -7,51 +7,49 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="author" content="Sean Dylan Patterson";
   <link href="./img/logos/Logo_Flame-5.png" rel="icon">
-  <link href="./img/logos/Logo_Flame-5.png" rel="apple-touch-icon" width="100" height="100" alt="The website's logo">
-  <link href="./style.css" rel="stylesheet">
-  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="./img/logos/Logo_Flame-5.png" rel="apple-touch-icon" width="50" height="50" alt="The website's logo" name="logo">
+  <link href="./style.css" rel="stylesheet" name="css">
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" name="bootstrap">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" name="bootstrap-icons">
+  <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" name="glightbox">
+  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" name="swiper">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer" name="font-awesome"/>
   <title>Venda Brothers Chysa Nyama | Gallery</title>
-  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" name="favicon">
 </head>
 
 <body id="home">
   <!-- Start Header Section -->
   <header id="header" class="fixed-top">
-    <div class="navbar-sticky" id="navbar-sticky">
-      <div class="container d-flex align-items-center justify-content-between">
-        <div class="" id="menu-button">
-          <a href="./img/menu.pdf" download="Venda_Brothers_Chysa_Nyama_Menu">
-            <img src="./img/menu.png" alt="menu" id="menu-icon" loading="lazy">
-          </a>
-        </div>
-        <img class="logo" src="./img/logos/Logo_Flame-5.png" alt="" style="width: 45px; height: 60px">
-        <div class="branding" id="branding">
-          <a href="/index.html" style="text-decoration: none">
-            <h1 class="hero-title company-name">Venda Brothers Chysa Nyama </h1>
-          </a>
-        </div>
-        <p class="hero-subtitle phone-number"> <a href="tel:+27723907241"><i class="fa fa-phone"> <span> </span> 072 390 7241 </i> </a> </p>
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a class="nav-link active" href="./gallery.html">Gallery</a></li>
-            <li><a class="nav-link scrollto" href="./index.html#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="./index.html#about">About</a></li>
-            <li><a class="nav-link scrollto" href="./index.html#services">Services</a></li>
-            <li><a class="nav-link scrollto" href="./index.html#work">Work</a></li>
-            <li><a class="nav-link scrollto" href="./index.html#plans">Plans</a></li>
-            <li><a class="nav-link scrollto" href="./index.html#contact-form">Contact</a></li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="" id="menu-button">
+        <a href="./img/menu.pdf" download="Venda_Brothers_Chysa_Nyama_Menu" name="menu-download">
+          <img src="./img/menu.png" alt="menu" id="menu-icon" loading="lazy">
+        </a>
       </div>
+      <img class="logo" src="./img/logos/Logo_Flame-5.png" alt="" style="width: 45px; height: 60px" loading="lazy">
+      <div class="branding" id="branding">
+        <a href="/index.html" style="text-decoration: none" name="home">
+          <h1 class="hero-title company-name">Venda Brothers Chysa Nyama </h1>
+        </a>
+      </div>
+      <p class="hero-subtitle phone-number"> <a href="tel:+27723907241" name="telephone"><i class="fa fa-phone"> <span> </span> 072 390 7241 </i> </a> </p>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="./gallery.html" name="gallery">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#hero" name="home-nav">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about" name="about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services" name="services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#work" name="work">Work</a></li>
+          <li><a class="nav-link scrollto" href="#plans" name="plans">Plans</a></li>
+          <li><a class="nav-link scrollto" href="#contact-form" name="contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
     </div>
-    </header><!-- End Header Section -->
+  </header><!-- End Header Section -->
     <main id="gallery-main">
       <div id="gallery-container" class="gallery-container">
         
@@ -194,7 +192,7 @@
           <div class="copyright-box">
             <p class="copyright">&copy; Copyright 2023 <a
                 href="https://github.com/SeanDylan1982/VendaBrothers-ChysaNyama" style="color:#f2f2f2"
-                title="Source Code Available on GitHub" target="_blank"><strong>Venda Brothers Chysa Nyama</strong></a>.
+                title="Source Code Available on GitHub" target="_blank" name="source-code"><strong>Venda Brothers Chysa Nyama</strong></a>.
               All Rights Reserved</p>
           </div>
         </div>
@@ -202,7 +200,7 @@
     </div>
   </footer><!-- End Footer Section -->
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center" name="back-to-top"><i class="bi bi-arrow-up"></i></a>
   <!-- Vendor JS Files -->
   <script defer src="assets/vendor/purecounter/purecounter.js"></script>
   <script defer src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
