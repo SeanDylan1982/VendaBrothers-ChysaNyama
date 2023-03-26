@@ -43,7 +43,7 @@ a:hover {
   color: #3d3d3d;
 }
 .box-shadow, .card-blog, .work-box, .service-box, .paralax-mf {
-  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 12px -10px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
 }
 .box-shadow-a, .button:hover {
@@ -125,18 +125,19 @@ a:hover {
 .breadcrumb {
   position: relative;
   top: -60px;
+  left: -600px;
 }
 .overlay-mf {
   background-color: #004799;
 }
 .overlay-mf {
-  position: absolute;
   top: 0;
   left: 0px;
   padding: 0;
   height: 100%;
   width: 100%;
   opacity: 0.7;
+  z-index: 1;
 }
 .overlay {
   background-color: #004799;
@@ -146,7 +147,7 @@ a:hover {
   top: 0;
   left: 0px;
   padding: 0;
-  height: 60%;
+  height: 45%;
   width: 100%;
   opacity: 0.7;
 }
@@ -1317,6 +1318,7 @@ html::-webkit-scrollbar {
   width: 700px;
   height: 1000px;
   transition: all 1s ease;
+  box-shadow: 0 0 15px #1a1a1a;
 }
 #menu-display:hover {
   filter: grayscale(0%);
@@ -1383,4 +1385,7 @@ html::-webkit-scrollbar {
   position: relative;
   display: flex;
   border-radius: 20px;
+}
+#map-container {
+  box-shadow: 0 0 10px #838383;
 }
