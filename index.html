@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <!-- Favicon and Home Button Logo -->
-  <link href="./img/logos/Logo_Flame-1.png" rel="icon">
-  <link href="./img/logos/Logo_Flame-1.png" rel="apple-touch-icon" width="100" height="100" alt="The website's logo">
+  <link href="./img/logos/Logo_Flame-5.png" rel="icon">
+  <link href="./img/logos/Logo_Flame-5.png" rel="apple-touch-icon" width="100" height="100" alt="The website's logo">
   <!-- CSS Stylesheet Files -->
   <link href="./style.css" rel="stylesheet">
   <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,11 +29,14 @@
           <img src="./img/menu.png" alt="menu" id="menu-icon">
         </a>
       </div>
-      <img src="./img/logos/Logo_Flame-1.png" alt="" id="flame-logo">
-      <a href="index.html" class="logo" style="text-decoration: none" id="header-logo">
-        <h1 class="hero-title company-name">Venda Brothers Chysa Nyama </h1>
-      </a>
-      <p class="hero-subtitle phone-number"> <i class="fa fa-phone"> <span> </span> 072 390 7241 </i> </p>
+      <!-- <a href="index.html" class="logo" style="text-decoration: none" id="logo-link"></a> -->
+      <img class="logo" src="./img/logos/Logo_Flame-5.png" alt="" style="width: 45px; height: 60px">
+      <div class="branding" id="branding">
+        <a href="#index.html" style="text-decoration: none">
+          <h1 class="hero-title company-name">Venda Brothers Chysa Nyama </h1>
+        </a>
+      </div>
+      <p class="hero-subtitle phone-number"> <a href="tel:+27723907241"><i class="fa fa-phone"> <span> </span> 072 390 7241 </i> </a> </p>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -53,29 +56,34 @@
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <!-- <div class="menu-container">
-            <object class="hidden" id="menu-display" type="application/pdf" menu="false" data="./img/menu.pdf"
-              width="100%" height="100%"></object>
-          </div> -->
           <img src="./img/logos/LogoOrangeRedPurple1.png" alt="">
-          <p class="hero-subtitle"><span class="typed"
+          <p class="hero-subtitle">
+            <span class="typed"
               data-typed-items="Braai..., Shisa nyama..., Ukosa..., Nkuku..., Ntlo ea lehlong..., Chesa nyama..., Ukushisa..., Ukugrilla..., Ukuholisa..., Umsila..., Ukuphahla..., Ukuhlabisa..., Ukhamba..., Isibindi..., Ntlohliwe..., Ukucula..., Ukuqhobosha..., Ukuqeda..., Ukucweya..., Ukuhlamba..., Ukuhlakaza..., Ukuhlolela..., Ukuyisa..., Ukwaba..., Ukugula..., Isidlo sasekhaya..., Ukulala ngesifo..., Ukubhabha..., Ukuba kwa go..., Ukuswa..., Ukuphosa..., Ukubeka..., Ukunyakaza..., Ukubheka..., Ukulapha..., Ukulahla..., Ukupheketa..., Ukupheka..., Ukugxeka..., Ukukhumbula..., Ukubala..., Ukubukela..., Ukugwinya..., Ukwabela..., Ukugada..., Ukubunga..., Ukubhacala..., Ukutaka..., Ukuduma..., Ukutlala..., Ukuziqhenya..., Ukukhala..., Ukutshisa..., Ukuziba..., Ukuthumela..., Ukucineka..., Ukuphekwa..., Ukucimela..., Ukuthoma..., Ukuthola..., Ukukhipha..., Ukuthela..., Ukuthwala..., Ukucika..., Ukucasha..., Ukucokama..., Ukugquma..., Ukudla..., Ukugabhana..., Ukugwinya..., Ukushubeza..., Ukuphelela..., Ukukhaza..., Ukukhokha..., Ukubamba..., Ukubamba isisu..., Ukubetha..., Ukuxova..., Ukuphahlaza..., Ukukhusela..., Ukukhalima..., Ukuphindela..., Ukubeka umfutho..., Ukufutha..., Ukunyamaza..., Ukupholisa..., Ukubeka phansi..., Ukuphonsa..., Ukuxovula..., Ukugangganisa..., Indlela yokulala ku ngena ngesifo..., Isiko sephethephethe..., Ukudla ngesisu..., Inqola yomzi..., Ukubuka inkomo zawo e nyakatho..., Ukuhamba kwesilomo..., Ukuhamba kwendlu..., Ukwanda kwebhokisi..., Imbiza yomzi..., Ukuzalwa kwabantu..., Ukuhlangana nabadala..., Ukuzalwa kwezindlu..., Ukucabanga ngesintu...,"></span>
           </p>
+          <div class="menu-container">
+            <iframe class="hidden" id="menu-display" type="application/pdf" menu="false" data="./img/menu.pdf"
+              width="100%" height="100%"></iframe>
+          </div>
         </div>
       </div>
     </div>
   </div><!-- End Hero Section -->
-  <!-- <div class="sidebar" id="sidebar">
+  <!-- <div class="sidebar-drawer" id="sidebar-drawer">
     <div class="tooltip">
       <i class="fa fa-file-text"> Our Menu </i>
       <span class="tooltip-text" id="menu-tooltip">
-        <object type="application/pdf" menu="false" data="./img/menu_03.jpg" width="100%" height="100%"></object>
+        <object type="application/pdf" menu="false" data="./img/menu.pdf" width="100%" height="100%"></object>
       </span>
     </div>
     <div class="tooltip">
       <i class="fa fa-map"> Map </i>
       <span class="tooltip-text" id="map-tooltip">
-        <object type="application/pdf" menu="false" data="./img/map.png" width="100%" height="100%"></object>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2255.519866314736!2d28.317283207897024!3d-26.183188630764725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e953d132a7767db%3A0xd1851b91d71779cd!2sVenda%20Brothers%20Chysa%20Nyama!5e0!3m2!1sen!2sza!4v1679650423860!5m2!1sen!2sza"
+          width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </span>
     </div>
   </div> -->
@@ -90,7 +98,6 @@
                   <div class="row">
                     <div class="col-sm-6 col-md-5">
                       <div class="about-img">
-                        <!-- <img src="./img/map.png" loading="lazy" class="img-fluid rounded b-shadow-a" alt=""> -->
                         <iframe
                           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2255.519866314736!2d28.317283207897024!3d-26.183188630764725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e953d132a7767db%3A0xd1851b91d71779cd!2sVenda%20Brothers%20Chysa%20Nyama!5e0!3m2!1sen!2sza!4v1679650423860!5m2!1sen!2sza"
                           width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy"
@@ -606,7 +613,7 @@
                 </div>
                 <h3 class="card-title">While keeping a keen eye on business opportunities presented</h3>
                 <p class="card-description">
-                  As a growing local business in the heart of our community we are excited to be involved
+                  As a growing local business in the heart of our community we are excited and enthusiastic to be involved
                   in goings on in and around our beautiful city!
                 </p>
               </div>
@@ -623,7 +630,7 @@
                     <h6 class="category">Community is at the heart of it</h6>
                   </div>
                 </div>
-                <h3 class="card-title">With our communities and neighbours, we're stronger together</h3>
+                <h3 class="card-title">Within our communities, we're stronger together</h3>
                 <p class="card-description">
                   Building critical ties to the community and essential stakeholders is vital for the future
                   generations of South African's we're raising today!
