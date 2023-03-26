@@ -124,32 +124,36 @@ a:hover {
 }
 .breadcrumb {
   position: relative;
-  top: -60px;
-  left: -600px;
+  top: -80px;
+  left: -38%;
 }
 .overlay-mf {
   background-color: #004799;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.4);
 }
 .overlay-mf {
+  position: absolute;
   top: 0;
-  left: 0px;
+  left: 0;
   padding: 0;
   height: 100%;
   width: 100%;
   opacity: 0.7;
-  z-index: 1;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.4);
 }
 .overlay {
   background-color: #004799;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.4);
 }
 .overlay {
   position: absolute;
   top: 0;
   left: 0px;
   padding: 0;
-  height: 45%;
+  height: 30%;
   width: 100%;
   opacity: 0.7;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.4);
 }
 .paralax-mf {
   position: relative;
