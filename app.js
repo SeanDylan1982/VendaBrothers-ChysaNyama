@@ -241,7 +241,7 @@ let galleryCounter = 0;
 
 function slidesCarousel(){
     slidesCounter++;
-    if (slidesCounter === 6){
+    if (slidesCounter === 30){
     slidesCounter = 0;
     }
     slides.forEach(function(slide){
