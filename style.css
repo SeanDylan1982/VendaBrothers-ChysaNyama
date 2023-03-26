@@ -1,18 +1,15 @@
 /**
 stylesheet.css for Sean Dylan Patterson - Portfolio
 */
-
 body {
   background-color: rgb(250, 250, 250);
   color: #1a1a1a;
   scroll-behavior: smooth;
   text-decoration: none;
 }
-
 * a {
   text-decoration: none;
 }
-
 h1,
 h2,
 h3,
@@ -21,7 +18,6 @@ h5,
 h6 {
   color: #1a1a1a;
 }
-
 a {
   color: #1a1a1a;
   text-decoration: none;
@@ -32,53 +28,43 @@ a:hover {
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
-
 .p-r {
   position: relative;
 }
-
 .color-a {
   text-decoration: none;
   color: #004799;
 }
-
 .color-d {
   color: #f2f2f2;
 }
-
 .color-text-a {
   text-decoration: none;
   color: #3d3d3d;
 }
-
 .box-shadow, .card-blog, .work-box, .service-box, .paralax-mf {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
-
 .box-shadow-a, .button:hover {
   text-decoration: none;
   box-shadow: 0 0 0 4px #bdbdbd;
 }
-
 .display-5 {
   font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.1;
 }
-
 .display-6 {
   font-size: 2rem;
   font-weight: 300;
   line-height: 1.1;
 }
-
 .avatar {
   width: 132px;
   height: 132px;
   margin-right: 4px;
   overflow: hidden;
 }
-
 .bg-image {
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -90,12 +76,10 @@ a:hover {
     background-attachment: scroll;
   }
 }
-
 .gallery-title {
   position: relative;
   top: -70px;
 }
-
 .gallery-container {
   position: relative;
   align-items: center;
@@ -137,16 +121,13 @@ a:hover {
   transform: translate(-50%, -50%);
   border-radius: 10px;
 }
-
 .breadcrumb {
   position: relative;
   top: -60px;
 }
-
 .overlay-mf {
   background-color: #004799;
 }
-
 .overlay-mf {
   position: absolute;
   top: 0;
@@ -156,11 +137,9 @@ a:hover {
   width: 100%;
   opacity: 0.7;
 }
-
 .overlay {
   background-color: #004799;
 }
-
 .overlay {
   position: absolute;
   top: 0;
@@ -170,72 +149,59 @@ a:hover {
   width: 100%;
   opacity: 0.7;
 }
-
 .paralax-mf {
   position: relative;
   padding: 8rem 0;
 }
-
 .display-table {
   width: 100%;
   height: 100%;
   display: table;
 }
-
 .table-cell {
   display: table-cell;
   vertical-align: middle;
 }
-
 /*--/ Sections /--*/
 .sect-4 {
   padding: 4rem 0;
 }
-
 .sect-pt4 {
   padding-top: 4rem;
 }
-
 .sect-mt4 {
   margin-top: 4rem;
 }
-
 /*--/ Title s /--*/
 .title-s {
   font-weight: 600;
   color: #1a1a1a;
   font-size: 1.1rem;
 }
-
 /*--/ Title A /--*/
 .title-box {
   margin-bottom: 4rem;
 }
-
 .title-a {
   text-decoration: none;
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
 }
-
 .subtitle-a {
   text-decoration: none;
   color: #4e4e4e;
 }
-
 .line-mf {
   width: 40px;
   height: 5px;
   background-color: #004799;
   margin: 0 auto;
 }
-
 /*--/ Title Left /--*/
 .title-box-2 {
   margin-bottom: 3rem;
 }
-
 .title-left {
   font-size: 2rem;
   position: relative;
@@ -248,12 +214,10 @@ a:hover {
   width: 100px;
   bottom: -12px;
 }
-
 /*------/ Box /------*/
 .box-pl2 {
   padding-left: 2rem;
 }
-
 .box-shadow-full {
   padding: 3rem 1.25rem;
   position: relative;
@@ -267,7 +231,6 @@ a:hover {
     padding: 3rem;
   }
 }
-
 /*------/ Socials /------*/
 .socials {
   padding: 1.5rem 0;
@@ -292,14 +255,12 @@ a:hover {
   box-shadow: 0 0 0 3px #ffffff;
   transition: all 1000ms ease;
 }
-
 /*------/ Ul resect /------*/
 .ul-resect, .widget-tags ul, .widget-sidebar .list-sidebar, .box-comments .list-comments, .blog-wrapper .post-meta ul, .list-ico, .socials ul {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
 }
-
 .list-ico {
   line-height: 1.8;
   position: relative;
@@ -319,7 +280,6 @@ a:hover {
   margin-right: 10px;
   font-size: 1.3rem;
 }
-
 /*------/ Ico Circle /------*/
 .ico-circle {
   height: 100px;
@@ -332,7 +292,6 @@ a:hover {
   box-shadow: 1 0 1 10px #004799;
   display: block;
 }
-
 /*------/ Owl Carousel /------*/
 .owl-theme .owl-dots {
   text-align: center;
@@ -358,7 +317,6 @@ a:hover {
   background-color: #1a1a1a;
   width: 25px;
 }
-
 /*--/ Scrolltop s /--*/
 .scrolltop-mf {
   position: relative;
@@ -382,7 +340,6 @@ a:hover {
   cursor: pointer;
   border-radius: 50%;
 }
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -445,7 +402,6 @@ a:hover {
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
 }
-
 @-webkit-keyframes animate-preloader {
   0% {
     transform: rotate(0deg);
@@ -509,7 +465,6 @@ a:hover {
   line-height: 1.5;
   border-radius: 0.3rem;
 }
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -542,7 +497,6 @@ a:hover {
   background: rgba(0, 0, 0, 0.9);
   padding: 12px 0;
 }
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -657,7 +611,6 @@ a:hover {
     left: -100%;
   }
 }
-
 /**
 * Mobile Navigation 
 */
@@ -750,7 +703,6 @@ a:hover {
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -824,7 +776,6 @@ a:hover {
 .hero-single .breadcrumb a {
   color: rgb(220, 220, 220);
 }
-
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -846,7 +797,6 @@ a:hover {
     padding-left: 0rem;
   }
 }
-
 .skill-mf span {
   color: #1a1a1a;
 }
@@ -860,7 +810,6 @@ a:hover {
   height: 0.7rem;
   background-color: #004799;
 }
-
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -905,7 +854,6 @@ a:hover {
 .service-box .s-description {
   color: #3a3a3a;
 }
-
 /*--------------------------------------------------------------
 # Counter
 --------------------------------------------------------------*/
@@ -918,7 +866,6 @@ a:hover {
     margin-bottom: 1.8rem;
   }
 }
-
 .counter-ico {
   margin-bottom: 1rem;
 }
@@ -928,12 +875,10 @@ a:hover {
   line-height: 1.5;
   box-shadow: 0 0 0 10px #b5c8dd;
 }
-
 .counter-num .counter {
   font-size: 2rem;
   margin-bottom: 0;
 }
-
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -948,7 +893,6 @@ a:hover {
   height: 300px;
   transform: scale(1.1);
 }
-
 .work-img {
   display: block;
   overflow: hidden;
@@ -958,7 +902,6 @@ a:hover {
   height: 250px;
   transition: all 1s;
 }
-
 .work-content {
   padding: 2rem 3% 1rem 4%;
 }
@@ -984,7 +927,6 @@ a:hover {
 .w-title {
   font-size: 1.2rem;
 }
-
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -1038,7 +980,6 @@ a:hover {
 .portfolio-details .portfolio-description p {
   padding: 3;
 }
-
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -1100,7 +1041,6 @@ a:hover {
 .swiper-pagination .swiper-pagination-bullet-active {
   background-color: rgb(240, 240, 240);
 }
-
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -1246,7 +1186,6 @@ a:hover {
   display: inline-block;
   float: right;
 }
-
 /*--------------------------------------------------------------
 # Blog Single
 --------------------------------------------------------------*/
@@ -1297,7 +1236,6 @@ a:hover {
   padding: 18px;
   font-style: italic;
 }
-
 /*------/ Comments /------*/
 .box-comments .list-comments li {
   padding-bottom: 40px;
@@ -1427,82 +1365,6 @@ html {
   margin-top: 10px;
   padding-top: 10px;
 }
-
-/* .tech-stack {
-  position: relative;
-  left: -30px;
-}
-
-.tech-stack h4 {
-  position: relative;
-  top: 0px;
-  left: 40px;
-}
-
-.tech-stack img {
-  position: relative;
-  left: -10px;
-  width: 60px;
-  height: 60px;
-  margin: 0 7px;
-  justify-content: space-between;
-} */
-
-/* .tech-stack span {
-  position: relative;
-  left: 20px;
-  margin: 0 0 0 12px;
-  justify-content: space-between;
-} */
-
-/* .pair-box {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 7px;
-}
-
-.row {
-  position: relative;
-  display: flex;
-  justify-content: center;
-} */
-
-/* .tooltip {
-  position: relative;
-  display: grid;
-  z-index: 3;
-  visibility: visible;
-  opacity: 1;
-  width: 65px;
-  height: 65px;
-  font-size: 2rem;
-  top: 20%;
-  left: -100%;
-  margin-left: 0px;
-  margin: 20px 0;
-  padding: 10px 0;
-  transition: all 0.7s ease-in-out;
-  text-align: centre;
-  width: 150px;
-}
-
-.tooltip .tooltip-text {
-  visibility: hidden;
-  width: 700px;
-  height: 800px;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 3;
-  opacity: 0;
-  transition: all 0.7s ease-in-out;
-  overflow-y: scroll;
-  text-align: centre;
-} */
-
 .tooltip .tooltip-text {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -1520,154 +1382,11 @@ html {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
-/* .tooltip p {
-  position: relative;
-  top: 30px;
-  left: 55px;
-  font-size: 1rem;
-  font-weight: 500;
-  text-align: left;
-  color: #f1f1f1;
-} */
-
-/* .tooltip-text:hover {
-  visibility: visible;
-  opacity: 1;
-  top: 50px;
-  left: 100px;
-  width: 700px;
-  height: 800px;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  z-index: 3;
-  transition: all 0.7s ease-in-out;
-  overflow-y: scroll;
-  text-align: centre;
-} */
-
-/* #sidebar {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  width: 100px;
-  height: 600px;
-  top: 20%;
-  right: -10%;
-  margin: 10px;
-  opacity: 1;
-  z-index: 3;
-  transition: all .5s ease-in-out;
-}
-
-#sidebar:hover {
-  opacity: 1;
-  transition: all .5s ease-in-out;
-} */
-
-/* #tt-menu {
-  position: relative;
-  top: 10%;
-  left: 10%;
-  transition: all 0.7s ease-in-out;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 3;
-}
-
-#tt-menu:hover {
-  visibility: visible;
-  opacity: 1;
-  width: 700px;
-  height: 800px;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  z-index: 3;
-  transition: all 0.7s ease-in-out;
-  overflow-y: scroll;
-  text-align: centre;
-  z-index: 3;
-} */
-
-/* #cl {
-  position: absolute;
-  display: grid;
-  top: -265%;
-  left: -430%;
-  width: 600px;
-  height: 780px;
-  transition: all .5s ease-in-out;
-}
-
-#cv {
-  position: absolute;
-  display: grid;
-  top: -425%;
-  left: -430%;
-  width: 600px;
-  height: 780px;
-  transition: all .5s ease-in-out;
-}
-
-#cs {
-  position: absolute;
-  display: grid;
-  top: -585%;
-  left: -430%;
-  width: 600px;
-  height: 780px;
-  transition: all .5s ease-in-out;
-}
-
-#id {
-  position: absolute;
-  display: grid;
-  top: -755%;
-  left: -430%;
-  width: 600px;
-  height: 780px;
-  transition: all .5s ease-in-out;
-}
-
-#vax {
-  position: absolute;
-  display: grid;
-  top: -915%;
-  left: -430%;
-  width: 600px;
-  height: 780px;
-  transition: all .5s ease-in-out;
-} */
-/* 
-.tt {
-  visibility: visible;
-}
-
-.tt-text {
-  visibility: hidden;
-  z-index: 9;
-}
-
-.tt:hover .tt-text {
-  visibility: visible;
-  opacity: 1;
-  position: absolute;
-  display: grid;
-  top: 50%;
-  left: 50%;
-  width: 600px;
-  height: 780px;
-  transition: all 0.5s ease-in-out;
-} */
-
 .fa {
   scale: 1;
   transition: all .5s ease-in-out;
   color: #f1f1f1;
 }
-
 .fa:hover {
   scale: 1.2;
   transform: translateY(-5px);
@@ -1676,14 +1395,12 @@ html {
   text-shadow: 0 0 5px #f8ff71;
   color: #fff;
 }
-
 html::-webkit-scrollbar {
   display: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
   -ms-overflow-style: none;
 }
-
 #menu-icon {
   position: absolute;
   display: flex;
@@ -1697,26 +1414,12 @@ html::-webkit-scrollbar {
   transition: all .5s ease-in-out;
   border: 1px solid #1a1a1a;
 }
-
 #menu-icon:hover {
   filter: grayscale(0%);
   scale: 1.1;
   transition: all .5s ease-in-out;
   box-shadow: 0 0 10px #fffc31;
-}
-
-/* #menu-display {
-  position: absolute;
-  top: 50px;
-  left: 250px;
-  opacity: 1;
-  width: 700px;
-  height: 800px;
-  z-index: 1;
-  transition: all .5s ease-in-out;
-} */
-
-.hidden {
+}.hidden {
   visibility: hidden;
   opacity: 0;
   z-index: -999;
