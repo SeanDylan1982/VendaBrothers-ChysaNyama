@@ -1260,6 +1260,7 @@ footer .credits a {
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  scrollbar-height: none;
   scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
@@ -1269,6 +1270,9 @@ body::-webkit-scrollbar {
 
 html {
   position: relative;
+  scrollbar-width: none;
+  scrollbar-height: none;
+  scrollbar: none;
   scroll-behavior: smooth;
 }
 
