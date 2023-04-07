@@ -481,9 +481,14 @@ a:hover {
 # Header
 --------------------------------------------------------------*/
 #header {
+  position: sticky;
   transition: all 0.5s;
-  z-index: 997;
+  z-index: 9;
   padding: 20px 0;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #111111ff;
 }
 #header .logo {
   font-size: 28px;
@@ -496,7 +501,7 @@ a:hover {
   color: rgb(220, 220, 220);
 }
 #header .logo img {
-  max-height: 40px;
+  max-height: 60px;
   transition: all .5s ease-in-out;
   filter: grayscale(55%);
 }
@@ -516,19 +521,19 @@ a:hover {
 * Desktop Navigation 
 */
 .navbar-sticky {
-  position: absolute;
-  margin-top: -20px;
+  position: sticky;
+  margin-top: 0px;
   padding: 0px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   box-shadow: 0 0 15px #1a1a1aaa;
   width: 100vw;
-  height: 80px;
+  max-height: 50px;
   background-color: #111111ff;
 }
 .navbar {
   padding: 0;
-  background-color: transparent;
+  background-color: #111;
 }
 .navbar ul {
   margin: 0;
@@ -1325,21 +1330,21 @@ html::-webkit-scrollbar {
   -ms-overflow-style: none;
 }
 #menu-icon {
-  position: absolute;
+  position: fixed;
   top: 10px;
   left: 25px;
   margin-bottom: 5px;
   display: block;
   z-index: 3;
-  width: 65px;
-  height: 65px;
-  filter: grayscale(100%);
+  width: 80px;
+  height: 120px;
+  filter: grayscale(50%);
   scale: 1;
   transition: all 1s ease-in-out;
   border: 1px solid #1a1a1a;
 }
 #menu-icon:hover {
-  filter: grayscale(0%);
+  filter: grayscale(10%);
   scale: 1.1;
   transition: all 1s ease-in-out;
   box-shadow: 0 0 10px #fffc31;
@@ -1376,7 +1381,7 @@ html::-webkit-scrollbar {
   position: relative;
   top: 10px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem !important;
   color: #fff;
 }
 .company-name {
