@@ -492,10 +492,13 @@ a:hover {
 }
 #header .logo {
   font-size: 28px;
-  margin: 0;
+  margin: 0 10px;
   padding: 0;
   font-weight: 600;
   letter-spacing: 1px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 #header .logo a {
   color: rgb(220, 220, 220);
@@ -504,6 +507,9 @@ a:hover {
   max-height: 60px;
   transition: all .5s ease-in-out;
   filter: grayscale(55%);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 #header .logo img:hover {
   box-shadow: 0 0 5px #f8ff71;
@@ -512,7 +518,7 @@ a:hover {
 }
 #header.header-scrolled {
   background: rgba(0, 0, 0, 0.9);
-  padding: 12px 0;
+  padding: 20px;
 }
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -521,26 +527,32 @@ a:hover {
 * Desktop Navigation 
 */
 .navbar-sticky {
-  position: sticky;
-  margin-top: 0px;
-  padding: 0px;
+  position: absolute;
   display: flex;
-  flex-direction: column;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  flex-direction: row;
   box-shadow: 0 0 15px #1a1a1aaa;
   width: 100vw;
-  max-height: 50px;
+  max-height: 100px;
   background-color: #111111ff;
 }
 .navbar {
+  margin: 0;
   padding: 0;
-  background-color: #111;
+  background-color: transparent;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
-.navbar ul {
+/* .navbar ul {
   margin: 0;
   padding: 0;
   display: flex;
   list-style: none;
+  text-align: center;
   align-items: center;
+  justify-content: center;
 }
 .navbar li {
   position: relative;
@@ -548,7 +560,8 @@ a:hover {
 .navbar > ul > li {
   white-space: nowrap;
   padding: 10px 0 10px 30px;
-}
+  font-size: .5rem;
+} */
 .navbar a, .navbar a:focus {
   display: flex;
   align-items: center;
@@ -582,10 +595,12 @@ a:hover {
 }
 .navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
   visibility: visible;
-  width: 80%;
+  width: 90%;
+  height: 100%;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: rgb(240, 240, 240);
+  color: #fff;
+  text-shadow: 0 0 15px #f8ff71;
 }
 .navbar .dropdown ul {
   display: block;
@@ -600,6 +615,9 @@ a:hover {
   background: rgb(240, 240, 240);
   box-shadow: 0px 0px 30px rgba(19, 22, 27, 0.3);
   transition: 0.3s;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 .navbar .dropdown ul li {
   min-width: 200px;
@@ -755,7 +773,7 @@ a:hover {
   padding: 0;
   height: 100%;
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 .hero .hero-title {
   color: rgb(204, 234, 255);
@@ -773,7 +791,7 @@ a:hover {
   bottom: -150px;
   font-size: 1.5rem;
   font-weight: 600;
-  text-shadow: 0 0 10px #ff8040;
+  text-shadow: 0 0 5px #fffc31;
 }
 @media (min-width: 768px) {
   .hero .hero-subtitle {
@@ -811,6 +829,14 @@ a:hover {
 }
 .hero-single .breadcrumb a {
   color: rgb(220, 220, 220);
+}
+#focal-point {
+  position: relative;
+  margin: 1% 35% -10% 35%;
+  display: flex;
+  justify-content: center;
+  width: 420px;
+  height: 400px;
 }
 /*--------------------------------------------------------------
 # About
@@ -1249,7 +1275,7 @@ a:hover {
 footer {
   text-align: center;
   color: rgb(240, 240, 240);
-  padding: 25px;
+  padding: 50px;
   background: #004799;
 }
 footer .copyright {
@@ -1337,31 +1363,34 @@ html::-webkit-scrollbar {
   display: block;
   z-index: 3;
   width: 80px;
-  height: 120px;
+  height: 100px;
   filter: grayscale(50%);
   scale: 1;
   transition: all 1s ease-in-out;
   border: 1px solid #1a1a1a;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 #menu-icon:hover {
   filter: grayscale(10%);
   scale: 1.1;
   transition: all 1s ease-in-out;
-  box-shadow: 0 0 10px #fffc31;
+  box-shadow: 0 0 15px #fffc31;
 }
 #menu-display {
   position: absolute;
-  display: static;
+  display: fixed;
   flex-direction: column;
-  top: -50px;
-  left: 430px;
-  width: 700px;
-  height: 1000px;
+  top: -140px;
+  left: 0px;
+  width: 600px;
+  height: 860px;
   transition: all 1s ease;
-  box-shadow: 0 0 15px #1a1a1a;
   z-index: 3;
 }
 #menu-display:hover {
+  box-shadow: 0 0 15px #fffc31;
   filter: grayscale(0%);
   transition: all .5s ease;
 }
@@ -1379,9 +1408,29 @@ html::-webkit-scrollbar {
 }
 .phone-number {
   position: relative;
-  top: 10px;
+  display: flex;
+  flex-direction: row;
+  top: 1px;
   text-align: center;
-  font-size: 2rem !important;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  margin: 0 10px;
+  padding: 0 10px;
+}
+.phone-number h1 {
+  margin-left: 10px;
+  color: #fff;
+  font-weight: 500;
+}
+#phone i {
+  font-size: 2rem;
+  margin: 0 20px;
+  color: #fff;
+}
+#phone a {
+  font-size: 2rem;
+  text-decoration: none;
   color: #fff;
 }
 .company-name {
@@ -1403,11 +1452,13 @@ html::-webkit-scrollbar {
   right: -50px;
   width: 250px;
 }
-#branding {
+#branding h1 {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  font-size: 2.3rem;
+  padding: 0 20px;
 }
 #branding img {
   position: relative;
