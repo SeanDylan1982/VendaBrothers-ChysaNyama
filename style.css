@@ -1638,7 +1638,7 @@ html::-webkit-scrollbar {
   }
 
   /* Hero adjustments */
-  .hero { height: auto; min-height: 60vh; }
+  .hero { height: 100vh; }
   .hero .hero-content { top: 60px; padding: 1rem; }
   .hero .hero-title { font-size: 2rem; }
   .hero .hero-subtitle { bottom: -30px; font-size: 1rem; }
@@ -1716,6 +1716,7 @@ html::-webkit-scrollbar {
 }
 
 @media (max-width: 480px) {
+  .hero { height: 100vh; }
   .hero .hero-title { font-size: 1.6rem; }
   .hero .hero-subtitle { font-size: 0.95rem; }
   .company-name { font-size: 1.2rem; }
@@ -1815,6 +1816,7 @@ html::-webkit-scrollbar {
 }
 
 @media (max-width: 480px) {
+  .hero { height: 100vh; }
   #floating-controls { left: 6px; gap: 8px; }
   #floating-controls #menu-button a, #floating-controls .floating-phone-button { width: 52px; height: 52px; }
   #menu-display { left: 72px; width: 260px; }
