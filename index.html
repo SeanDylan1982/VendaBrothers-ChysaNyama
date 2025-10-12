@@ -29,40 +29,20 @@
 </head>
 
 <body id="home">
-  <!-- Start Header Section -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-      <nav id="navbar" class="navbar">
-        <div class="" id="menu-button">
-          <a href="./img/menu.png" download="Venda_Brothers_Chysa_Nyama_Menu_April_2023" name="menu-download">
-            <img src="./img/menu.png" class="logo-img" alt="menu" id="menu-icon" loading="lazy"></img>
-          </a>
-        </div>
-        <!-- <img class="logo" src="./img/logos/Logo_Flame-5.png" alt="" style="width: 45px; height: 60px" loading="lazy"> -->
-        <div class="branding" id="branding">
-          <a href="/index.html" style="text-decoration: none" name="home">
-            <h1 class="hero-title company-name">Venda Brothers Chysa Nyama </h1>
-          </a>
-        </div>
-        <img class="logo" src="./img/logos/Logo_Flame-5.png" alt="" style="width: 45px; height: 60px" loading="lazy">
-        <div class="phone-number" id="phone">
-          <span><a href="tel:0723907241" name="telephone"><h1>072 390 7241</h1></span></a>
-          <span> <i class="fa fa-phone"></i> </span>
-          <span><a href="tel:0670650213"><h1>067 065 0213</h1></span></a>
-        </div>
-        <!-- <ul>
-          <li><a class="nav-link" href="./gallery.html" name="gallery">Gallery</a></li>
-          <li><a class="nav-link scrollto active" href="#hero" name="home-nav">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about" name="about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services" name="services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#work" name="work">Work</a></li>
-          <li><a class="nav-link scrollto" href="#plans" name="plans">Plans</a></li>
-          <li><a class="nav-link scrollto" href="#contact-form" name="contact">Contact</a></li>
-        </ul> -->
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+  <!-- Floating controls (menu + phone) - header/navbar removed -->
+  <div id="floating-controls" aria-hidden="false">
+    <div id="menu-button" aria-controls="menu-display" aria-expanded="false">
+      <a href="./img/menu.png" download="Venda_Brothers_Chysa_Nyama_Menu_April_2023" name="menu-download" aria-label="Download menu">
+        <i class="fa-solid fa-drumstick-bite"></i>
+        <!-- <img src="./img/menu.png" id="menu-icon" alt="menu" loading="lazy"> -->
+      </a>
     </div>
-  </header><!-- End Header Section -->
+    <div class="floating-phone" id="phone-floating">
+      <a href="tel:+27723907241" class="floating-phone-button" aria-label="Call Venda Brothers">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
   <!-- Start Hero Section -->
   <div id="hero" class="hero route bg-image" style="background-image: url(./img/venda-brothers-background-1.jpg)" loading="lazy">
     <div class="overlay-itro"></div>
@@ -91,12 +71,13 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="row">
-                    <div class="col-sm-6 col-md-5">
+                    <div class="col-sm-12 col-md-5">
                       <div class="about-img">
-                        <iframe style="width: 500px; height: 620px; margin: 20px 0;" 
-                          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2255.519866314736!2d28.317283207897024!3d-26.183188630764725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e953d132a7767db%3A0xd1851b91d71779cd!2sVenda%20Brothers%20Chysa%20Nyama!5e0!3m2!1sen!2sza!4v1679650423860!5m2!1sen!2sza" title="map-embed"
-                          width="500px" height="500px" allowfullscreen="false" loading="lazy"
-                          referrerpolicy="no-referrer-when-downgrade" id="map-container"></iframe>
+                        <iframe class="responsive-map" 
+                          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2255.519866314736!2d28.317283207897024!3d-26.183188630764725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e953d132a7767db%3A0xd1851b91d71779cd!2sVenda%20Brothers%20Chysa%20Nyama!5e0!3m2!1sen!2sza!4v1679650423860!5m2!1sen!2sza" width="500" height="650"  title="map-embed"
+                          allowfullscreen="false" loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade" id="map-container"
+                          ></iframe>
                       </div>
                     </div>
                     <div class="col-sm-6 col-md-7">

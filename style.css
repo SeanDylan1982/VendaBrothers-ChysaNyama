@@ -377,7 +377,7 @@ a:hover {
 .back-to-top:hover {
   background: #297fe0;
   color: rgb(240, 240, 240);
-  text-shadow: 0 0 5px #fffc31;
+  /* text-shadow: 0 0 5px #fffc31; */
 }
 .back-to-top.active {
   visibility: visible;
@@ -512,7 +512,7 @@ a:hover {
   justify-content: center;
 }
 #header .logo img:hover {
-  box-shadow: 0 0 5px #f8ff71;
+  /* box-shadow: 0 0 5px #f8ff71; */
   transition: all .5s ease-in-out;
   filter: grayscale(25%);
 }
@@ -600,7 +600,7 @@ a:hover {
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: #fff;
-  text-shadow: 0 0 15px #f8ff71;
+  /* text-shadow: 0 0 15px #f8ff71; */
 }
 .navbar .dropdown ul {
   display: block;
@@ -1342,11 +1342,11 @@ html {
   color: #f1f1f1;
 }
 .fa:hover {
-  scale: 1.2;
-  transform: translateY(-5px);
-  transform: translateX(5px);
+  /* scale: 1.2; */
+  /* transform: translateY(-5px); */
+  /* transform: translateX(5px); */
   transition: all .5s ease-in-out;
-  text-shadow: 0 0 5px #f8ff71;
+  /* text-shadow: 0 0 5px #f8ff71; */
   color: #fff;
 }
 html::-webkit-scrollbar {
@@ -1376,7 +1376,7 @@ html::-webkit-scrollbar {
   filter: grayscale(10%);
   scale: 1.1;
   transition: all 1s ease-in-out;
-  box-shadow: 0 0 15px #fffc31;
+  /* box-shadow: 0 0 15px #fffc31; */
 }
 #menu-display {
   position: absolute;
@@ -1390,7 +1390,7 @@ html::-webkit-scrollbar {
   z-index: 3;
 }
 #menu-display:hover {
-  box-shadow: 0 0 15px #fffc31;
+  /* box-shadow: 0 0 15px #fffc31; */
   filter: grayscale(0%);
   transition: all .5s ease;
 }
@@ -1478,8 +1478,15 @@ html::-webkit-scrollbar {
   display: flex;
   border-radius: 20px;
 }
-#map-container {
+#map-container, iframe.responsive-map {
   box-shadow: 0 0 10px #838383;
+  display: block;
+  width: 100%;
+  max-width: 500px; /* keeps desktop layout reasonable */
+  height: auto; /* let aspect-ratio control height */
+  aspect-ratio: 4 / 5; /* matches original 500x650 */
+  border: 0;
+  margin: 0 auto 1rem auto; /* space from surrounding text */
 }
 #reviews {
   position: absolute;
@@ -1593,3 +1600,223 @@ html::-webkit-scrollbar {
   margin: 20px;
   padding: 20px;
 }
+
+/* Responsive overrides - make fixed pixel layouts fluid and mobile-friendly */
+@media (max-width: 991px) {
+  /* Header and nav stacking */
+  .navbar-sticky, .container.d-flex.align-items-center.justify-content-between {
+    flex-wrap: wrap;
+    padding: 8px 10px;
+    position: relative;
+  }
+  #menu-icon {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    width: 56px;
+    height: 56px;
+    z-index: 9999;
+  }
+  .branding, .company-name, #branding h1 {
+    order: 1;
+    width: 100%;
+    text-align: center;
+    margin: 0.25rem 0;
+    left: 0;
+  }
+  .logo, #branding img {
+    order: 0;
+    margin: 0 auto;
+    left: 0;
+  }
+  .phone-number {
+    order: 2;
+    width: 100%;
+    justify-content: center;
+    margin-top: 6px;
+    font-size: 1rem;
+  }
+
+  /* Hero adjustments */
+  .hero { height: auto; min-height: 60vh; }
+  .hero .hero-content { top: 60px; padding: 1rem; }
+  .hero .hero-title { font-size: 2rem; }
+  .hero .hero-subtitle { bottom: -30px; font-size: 1rem; }
+  #focal-point { margin: 1rem auto; width: 220px; height: auto; }
+
+  /* Gallery / slider fluid sizing */
+  #gallery-box, .gallery-box, .slider-container, .slide, .slide-image, #gallery-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    top: 0 !important;
+    left: 0 !important;
+    margin: 0.5rem auto !important;
+    padding: 0.5rem !important;
+    border-radius: 12px;
+  }
+  .gallery-box img, .slide img, .slide-image, .work-img img, .img-fluid, .service-box img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+  }
+
+  /* Map iframe responsive */
+  /* Map iframe responsive: let the iframe fill its column and cap height so it can't cover text */
+  .about-mf .about-img {
+    width: 100% !important;
+    max-width: 420px !important;
+    height: auto !important;
+    margin: 0 auto 1rem auto !important;
+  }
+
+  #map-container,
+  iframe.responsive-map {
+    position: relative;
+    display: block !important;
+    width: 100% !important;
+    max-width: 420px !important;
+    height: auto !important;
+    aspect-ratio: 4 / 5 !important; /* matches original 500x650 */
+    max-height: 480px !important;
+    margin: 0.5rem auto 1rem auto !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+
+  /* Service boxes stack */
+  .service-box {
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .service-box img {
+    position: static !important;
+    width: 96px !important;
+    height: 96px !important;
+    top: 0;
+    left: 0;
+  }
+  .service-box .s-description { margin-left: 0 !important; text-align: left; }
+
+  /* Testimonials / reviews */
+  #reviews { position: relative; margin: 1rem 0; top: 0; font-size: 1.4rem; }
+
+  /* Popi elements */
+  #popi-img { position: relative; left: 0; top: 0; width: 120px; }
+  #popi-disclaimer { position: relative; left: 0; top: 0; width: 100% !important; max-width: 100% !important; height: auto; }
+
+  /* Misc */
+  #menu-display { position: absolute; width: 90% !important; max-width: 360px; top: 64px; left: 8px; height: auto; }
+  #contact-btn { width: auto !important; }
+}
+
+@media (max-width: 480px) {
+  .hero .hero-title { font-size: 1.6rem; }
+  .hero .hero-subtitle { font-size: 0.95rem; }
+  .company-name { font-size: 1.2rem; }
+  .phone-number h1 { font-size: 1rem; margin-left: 6px; }
+  #menu-icon { width: 40px; height: 40px; border: none; align-items: center; justify-content: center;}
+  #menu-button img { width: 40px; height: 40px; object-fit: contain; }
+  .service-box img { width: 72px !important; height: 72px !important; }
+  .title-a { font-size: 1.2rem; }
+  .work-img img { width: 100%; height: auto; }
+
+  /* Mobile: ensure .about-img is fluid and the map is short and contained */
+  .about-mf .about-img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    margin: 0 auto 1rem auto !important;
+  }
+
+  #map-container,
+  iframe.responsive-map {
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    max-width: 360px !important;
+    height: auto !important;
+    aspect-ratio: 4 / 3 !important;
+    max-height: 360px !important;
+    margin: 0.5rem auto 1rem auto !important;
+    display: block !important;
+  }
+}
+
+/* Floating controls (menu + phone) pinned mid-left */
+#floating-controls {
+  position: fixed;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 99999;
+  align-items: center;
+}
+#floating-controls #menu-button a, #floating-controls .floating-phone-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: rgba(17,17,17,0.85);
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  text-decoration: none;
+}
+#menu-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  left: 8px;
+}
+#floating-controls #menu-button a {
+  padding: 0; /* remove any extra padding */
+  line-height: 0; /* remove baseline offset */
+}
+#floating-controls #menu-button a img,
+#floating-controls #menu-button img {
+  display: block;
+  margin: 0 auto;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+#floating-controls .floating-phone-button {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.fa-drumstick-bite {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+/* Ensure the menu display appears near the floating controls */
+#menu-display {
+  position: fixed;
+  left: 88px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+  max-width: calc(100vw - 120px);
+  height: auto;
+  z-index: 99998;
+  border-radius: 14px;
+}
+
+@media (max-width: 480px) {
+  #floating-controls { left: 6px; gap: 8px; }
+  #floating-controls #menu-button a, #floating-controls .floating-phone-button { width: 52px; height: 52px; }
+  #menu-display { left: 72px; width: 260px; }
+}
+

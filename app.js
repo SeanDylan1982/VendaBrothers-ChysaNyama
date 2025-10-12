@@ -263,12 +263,28 @@ setInterval(galleryCarousel, 5000);
 
 let menuBtn = document.getElementById('menu-button');
 let menuDisplay = document.getElementById('menu-display');
+if (menuBtn && menuDisplay) {
+    // Hover behavior (desktop)
+    menuBtn.addEventListener('mouseover', () => {
+        menuDisplay.classList.remove('hidden');
+        menuDisplay.classList.add('active');
+    });
+    menuBtn.addEventListener('mouseleave', () => {
+        menuDisplay.classList.remove('active');
+        menuDisplay.classList.add('hidden');
+    });
 
-menuBtn.addEventListener('mouseover', () => {
-    menuDisplay.classList.toggle('hidden');
-    menuDisplay.classList.toggle('active');
-});
-menuBtn.addEventListener('mouseleave', () => {
-    menuDisplay.classList.toggle('hidden');
-    menuDisplay.classList.toggle('active');
-})
+    // Click/tap behavior (mobile/touch)
+    menuBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (menuDisplay.classList.contains('active')) {
+            menuDisplay.classList.remove('active');
+            menuDisplay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        } else {
+            menuDisplay.classList.remove('hidden');
+            menuDisplay.classList.add('active');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+    });
+}
