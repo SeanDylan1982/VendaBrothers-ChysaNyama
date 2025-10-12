@@ -726,10 +726,19 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-            <p class="copyright">&copy; Copyright 2023 <a
+            <p class="copyright">&copy; Copyright <span id="currentYear"></span>
+              <a
                 href="https://github.com/SeanDylan1982/VendaBrothers-ChysaNyama" style="color:#f2f2f2"
                 title="Source Code Available on GitHub" target="_blank" name="source-code"><strong>Venda Brothers Chysa Nyama</strong></a>.
               All Rights Reserved</p>
+            <script>
+              // Insert current year into footer
+              (function(){
+                const y = new Date().getFullYear();
+                const el = document.getElementById('currentYear');
+                if(el) el.textContent = y;
+              })();
+            </script>
           </div>
         </div>
       </div>
